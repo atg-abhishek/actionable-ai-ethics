@@ -1,6 +1,6 @@
 ## Welcome to Actionable AI Ethics
 
-![Cover image](https://github.com/atg-abhishek/actionable-ai-ethics/blob/master/actionable%20ai%20ethics%20cover%20image.001.jpeg)
+![Cover image](actionable%20ai%20ethics%20cover%20image.001.jpeg)
 
 #### Aim of the book
 
