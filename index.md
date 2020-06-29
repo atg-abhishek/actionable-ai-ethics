@@ -2,6 +2,14 @@
 
 ![Cover image](actionable%20ai%20ethics%20cover%20image.001.jpeg)
 
+### The book is forthcoming in 2021 to be published by Manning
+
+***
+
+### To stay up-to-date on the content of the book and learn more about AI Ethics, please sign up here: [Actionable AI Ethics](https://actionableaiethics.substack.com/)
+
+***
+
 #### Aim of the book
 
 The aim of the book is to guide everyday practitioners to apply principles and guidelines in the domain of AI ethics to the AI development and deployment lifecycle, translating high-level, abstract ideas into concrete and measurable techniques with minimal friction to meet the goal of building ethical, safe, and inclusive AI systems that are aligned with the values of their organization. The uniqueness of the book is that it surfaces the signal from the noise that surrounds the fragmented tooling and framework landscape in AI ethics. 
@@ -21,8 +29,3 @@ Learning begins by orienting the reader in the most frequently encountered areas
 1. AI Ethics is not a domain that only consists of abstract ideas but has many tangible tools and techniques which when linked together through a bridge can lead to an organization building ethical, safe, and inclusive AI systems.
 2. You don’t need to be a researcher specialized in the field of AI ethics to apply advances in this field to your work. 
 3. AI ethics is not a burdensome add-on to the workflow of the developer, when done through the framework prescribed in the book, it leads to building better and more effective products and services that meet the needs of more customers and users. 
-
-
-### The book is forthcoming in 2021 to be published by Manning
-
-### To stay up-to-date on the content of the book and learn more about AI Ethics, please sign up here: [Actionable AI Ethics](https://actionableaiethics.substack.com/)
