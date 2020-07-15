@@ -10,6 +10,10 @@
 
 ***
 
+### Here is a presentation titled [Why Actionable AI Ethics?](https://atg-abhishek.github.io/presentations/why-actionable-ai-ethics.html) that will explain the rationale behind why this is needed now!
+
+***
+
 #### Aim of the book
 
 The aim of the book is to guide everyday practitioners to apply principles and guidelines in the domain of AI ethics to the AI development and deployment lifecycle, translating high-level, abstract ideas into concrete and measurable techniques with minimal friction to meet the goal of building ethical, safe, and inclusive AI systems that are aligned with the values of their organization. The uniqueness of the book is that it surfaces the signal from the noise that surrounds the fragmented tooling and framework landscape in AI ethics. 
