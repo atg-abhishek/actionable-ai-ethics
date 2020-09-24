@@ -1,0 +1,11 @@
+# Book settings
+title: Actionable AI Ethics
+author: Abhishek Gupta
+logo: abhishek.png
+
+launch_buttons:
+  binderhub_url: https://mybinderhub.org
+
+latex:
+  latex_documents:
+    targetname: book.tex
