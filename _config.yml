@@ -3,8 +3,13 @@ title: Actionable AI Ethics
 author: Abhishek Gupta
 logo: abhishek.png
 
+# Information about where the book exists on the web
+repository:
+  url                       : https://github.com/atg-abhishek/actionable-ai-ethics
+  branch                    : master  
+
 launch_buttons:
-  binderhub_url: https://mybinderhub.org
+  binderhub_url: https://mybinder.org
 
 latex:
   latex_documents:
