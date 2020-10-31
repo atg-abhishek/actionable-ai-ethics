@@ -9,6 +9,7 @@ On the following pages, you will find summaries and insights on papers and artic
 | Date  | Entry |
 | ------------- | ------------- | 
 |  October 29 2020 | [Fairness Definitions Explained](./fairness_definitions_explained.md)  |
+|  October 30 2020 | [Automating informality: On AI and labour in the global South](./automating_informality.md)       |
 
 ## Feedback
 
