@@ -3,7 +3,7 @@ Welcome to Actionable AI Ethics
 
 ![Cover image](cover.png)
 
-*The book is forthcoming in 2021 to be published by Manning*
+*The book is forthcoming in 2021 to be published by Manning Publications*
 
 ***
 
@@ -51,7 +51,7 @@ You can also learn more about the AI Ethics domain in general from the other new
 
 Abhishek Gupta is the founder of [Montreal AI Ethics Institute](https://montrealethics.ai) and a Machine Learning Engineer at Microsoft where he serves on the CSE Responsible AI Board. **He is representing Canada for the International Visitor Leaders Program (IVLP) administered by the US State Department as an expert on the future of work.**
 
-He additionally serves on the AI Advisory Board for Dawson College and is an Associate Member of the LF AI Foundation at the Linux Foundation. Abhishek is also a Global Shaper with the World Economic Forum and a member of the Banff Forum. He is a Faculty Associate at the Frankfurt Big Data Lab at the Goethe University, an AI Ethics Mentor for Acorn Aspirations and an AI Ethics Expert at Ethical Intelligence Co. He is the Responsible AI Lead for the Data Advisory Council at the Northwest Commission on Colleges and Universities. He is a guest lecturer at the McGill University School of Continuing Studies for the Data Science in Business Decisions course on the special topic of AI Ethics. He is a Subject Matter Expert in AI Ethics for the Certified Ethical Emerging Technologies group at CertNexus. He is also a course creator and instructor for the Coursera Certified Ethical Emerging Technologist course.
+He additionally serves on the AI Advisory Board for Dawson College and is an Associate Member of the LF AI Foundation at the Linux Foundation. Abhishek is also a Global Shaper with the World Economic Forum and a member of the Banff Forum. He is a Faculty Associate at the Frankfurt Big Data Lab at the Goethe University, an AI Ethics Mentor for Acorn Aspirations and an AI Ethics Expert at Ethical Intelligence Co. He is the Responsible AI Lead for the Data Advisory Council at the Northwest Commission on Colleges and Universities. He is a guest lecturer at the McGill University School of Continuing Studies for the Data Science in Business Decisions course on the special topic of AI Ethics. He is a Subject Matter Expert in AI Ethics for the Certified Ethical Emerging Technologies group at CertNexus. He is also a course creator and instructor for the Coursera Certified Ethical Emerging Technologist course. He's the Founding Editorial Board Member at the Springer Nature AI and Ethics Journal. 
 
 His research focuses on applied technical and policy methods to address ethical, safety and inclusivity concerns in using AI in different domains. He has built the largest community driven, public consultation group on AI Ethics in the world that has made significant contributions to the Montreal Declaration for Responsible AI, the G7 AI Summit, AHRC and WEF Responsible Innovation framework, PIPEDA amendments for AI impacts, Scotland’s national AI strategy and the European Commission Trustworthy AI Guidelines. His work on public competence building in AI Ethics has been recognized by governments from North America, Europe, Asia, and Oceania. More information on his work can be found on his [website](https://atg-abhishek.github.io). 
 
