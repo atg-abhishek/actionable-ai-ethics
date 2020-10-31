@@ -1,6 +1,6 @@
 # Fairness Definitions Explained
 
-**Authors: Sahil Verma and Julia Rubin**
+**Authors: Sahil Verma and Julia Rubin**  
 
 [Paper link](https://dl.acm.org/citation.cfm?id=3194776)
 
@@ -9,6 +9,8 @@
 ### One-line summary
 
 The basic premise of the paper is that it will attempt to explain how because of different definitions of fairness, we can have scenarios that are fair according to one and not fair according to another. 
+
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 ### Data and techniques used
 
@@ -179,3 +181,9 @@ A list of papers that I think might be interesting related to this paper.
 I'll write back here with interesting points that surface from the Twitter discussion. 
 
 *If you have comments and would like to discuss more, please leave a [tweet here](https://twitter.com/actionable_ai/status/1321332124490911744?s=20).*
+
+### Sign up for the newsletter
+
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
+To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the [Actionable AI Ethics newsletter](https://actionableaiethics.substack.com)

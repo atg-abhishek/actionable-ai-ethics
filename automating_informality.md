@@ -1,6 +1,6 @@
 # Automating informality: On AI and labour in the global South
 
-**Authors: Noopur Raval**
+**Authors: Noopur Raval** 
 
 [Paper link](https://www.giswatch.org/node/6202)
 
@@ -9,6 +9,8 @@
 ### One-line summary
 
 A much needed perspective on the specifities of the labor impacts of AI in the Global South, this paper lays out the implications of the prevalent informal labor markets in India along with the associated social hierarchies that impose a double precarity on the lives of the workers because of marginalization through both digital and reinforced societal inequities.
+
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 ### Definitions
 
@@ -81,3 +83,9 @@ A list of papers that I think might be interesting related to this paper.
 I'll write back here with interesting points that surface from the Twitter discussion. 
 
 *If you have comments and would like to discuss more, please leave a [tweet here](https://twitter.com/actionable_ai/status/1322044315863048192?s=20).*
+
+### Sign up for the newsletter
+
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
+To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the [Actionable AI Ethics newsletter](https://actionableaiethics.substack.com)
