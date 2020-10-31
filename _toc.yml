@@ -2,3 +2,4 @@
 - file: readings
   sections:
     - file: fairness_definitions_explained
+    - file: automating_informality
