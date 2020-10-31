@@ -1,15 +1,8 @@
 # Readings
 
-On the following pages, you will find summaries and insights on papers and articles that I find interesting in the domain of AI ethics. 
+On the following pages, you will find summaries and insights on [papers, articles,](papers.md)  and [books](books.md) (well this will have more than just books in AI ethics!) that I find interesting in the domain of AI ethics. 
 
 *Short summaries and questions will also be posted on the book's [Twitter account](https://twitter.com/actionable_ai)*
-
-## Table of Contents
-
-| Date  | Entry |
-| ------------- | ------------- | 
-|  October 29 2020 | [Fairness Definitions Explained](./fairness_definitions_explained.md)  |
-|  October 30 2020 | [Automating informality: On AI and labour in the global South](./automating_informality.md)       |
 
 ## Feedback
 
