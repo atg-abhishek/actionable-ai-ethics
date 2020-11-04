@@ -1,0 +1,474 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hazard Contribution Modes of Machine Learning Components &#8212; Actionable AI Ethics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Books" href="books.html" />
+    <link rel="prev" title="Automating informality: On AI and labour in the global South" href="automating_informality.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/abhishek.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Actionable AI Ethics</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to Actionable AI Ethics
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="readings.html">
+   Readings
+  </a>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="reference internal" href="papers.html">
+     Papers
+    </a>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="fairness_definitions_explained.html">
+       Fairness Definitions Explained
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="automating_informality.html">
+       Automating informality: On AI and labour in the global South
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Hazard Contribution Modes of Machine Learning Components
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="books.html">
+     Books
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/hazard_modes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#one-line-summary">
+     One-line summary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definitions">
+     Definitions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-is-this-a-problem-in-lecs">
+     Why is this a problem in LECs?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-are-hcms-different-from-failure-modes">
+     How are HCMs different from failure modes?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-does-lec-error-arise">
+     How does LEC error arise?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#supervised-learning">
+       Supervised learning
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#unsupervised-learning">
+       Unsupervised learning
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-expected-performance">
+     What is expected performance?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#expected-and-accurate-ea-hcm">
+       Expected and Accurate (EA) HCM
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#expected-with-error-ee-hcm">
+       Expected with Error (EE) HCM
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-unexpected-performance">
+     What is unexpected performance?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#how-do-we-avoid-this-unexpected-performance">
+       How do we avoid this unexpected performance?
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#unexpected-and-accurate-ua-hcm">
+       Unexpected and accurate (UA) HCM
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusion">
+     Conclusion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-does-this-mean-for-actionable-ai-ethics">
+     What does this mean for Actionable AI Ethics?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#questions-that-i-am-exploring">
+     Questions that I am exploring
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#potential-further-reading">
+     Potential further reading
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#twitter-discussion">
+     Twitter discussion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sign-up-for-the-newsletter">
+     Sign up for the newsletter
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="hazard-contribution-modes-of-machine-learning-components">
+<h1>Hazard Contribution Modes of Machine Learning Components<a class="headerlink" href="#hazard-contribution-modes-of-machine-learning-components" title="Permalink to this headline">¶</a></h1>
+<p><strong>Authors</strong>: Colin Smith, Ewen Denney, and Ganesh Pai</p>
+<p><a class="reference external" href="https://ntrs.nasa.gov/citations/20200001851">Paper link</a></p>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="one-line-summary">
+<h3>One-line summary<a class="headerlink" href="#one-line-summary" title="Permalink to this headline">¶</a></h3>
+<p>This paper provides a categorization framework for assessing the safety posture of a system that consists of embdedded machine learning components. It additionally ties that in with a safety assurance reasoning scheme that helps to provide justifiable and demonstrable mechanisms for proving the safety of the system.</p>
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="section" id="definitions">
+<h3>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Safety assurance arguments</strong> : Structured reasoning that links the safety claims made about a system with verifiable and auditable pieces of evidence. Specifically, it provides defensible and comprehensive justification for the safety of a system in a given environment.</p></li>
+<li><p><strong>Failure modes and effects analysis (FMEA)</strong> : A bottom-up hazard analysis approach for a system with a focus on the level of components of the system.</p></li>
+<li><p><strong>Learning-enabled components (LEC)</strong> : Software systems that consist of knowledge acquisition and machine learning components to provide a function or a service.</p></li>
+<li><p><strong>Hazard Contribution Mode (HCM)</strong> : A categorization of the ways in which LEC outputs can lead to hazardous system states. It does so by linking the potentially unobservable outputs of the LEC with the observable outputs of the wider system.</p></li>
+<li><p><strong>LEC accuracy</strong> : The property of the LEC such that its outputs are globally optimal which could mean accurate classification, near-perfect regression, or selection of reward-maximization actions in reinforcement learning.</p></li>
+<li><p><strong>LEC error</strong> : The divergence between the LEC outputs and the reference values.</p></li>
+</ul>
+</div>
+<div class="section" id="why-is-this-a-problem-in-lecs">
+<h3>Why is this a problem in LECs?<a class="headerlink" href="#why-is-this-a-problem-in-lecs" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The problems where machine learning is utilized is often hard to specify, if it was easy to specify, it might not have warranted the use of machine learning.</p></li>
+<li><p>ML algorithms are often unintelligible to humans which makes their oversight hard.</p></li>
+</ul>
+</div>
+<div class="section" id="how-are-hcms-different-from-failure-modes">
+<h3>How are HCMs different from failure modes?<a class="headerlink" href="#how-are-hcms-different-from-failure-modes" title="Permalink to this headline">¶</a></h3>
+<p>They are broader than just failure modes in the sense that they also encapsulate the cases where there isn’t a failure but it can still lead to a hazardous state.</p>
+<p><strong>Figure 2 provided in the paper is a really good reference for someone who wants to get a quick understanding of the spectrum of HCMs</strong></p>
+<p><img alt="HCM" src="_images/hcm.png" /></p>
+<p>One of the things that is important regarding this figure is that we assume that we have the ability to define the safety thresholds and states for the system as a whole.</p>
+<p>Keeping this in mind, violating the safety thresholds can thus lead to the transition of the system from a safe to a hazardous state.</p>
+</div>
+<div class="section" id="how-does-lec-error-arise">
+<h3>How does LEC error arise?<a class="headerlink" href="#how-does-lec-error-arise" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="supervised-learning">
+<h4>Supervised learning<a class="headerlink" href="#supervised-learning" title="Permalink to this headline">¶</a></h4>
+<p>Error can emerge from a combination of <em>bias</em> from the model assumptions and from <em>variance</em> from the type and quantity of data used and <em>noise</em>.</p>
+</div>
+<div class="section" id="unsupervised-learning">
+<h4>Unsupervised learning<a class="headerlink" href="#unsupervised-learning" title="Permalink to this headline">¶</a></h4>
+<p>There are several sources for errors in this context: inadequately specified optimization objective leading to <em>approximation errors</em>, an <em>identifiability error</em> from the model parameter choices that complicate the differentiation of different inputs, inadequate data a.k.a. <em>estimation error</em>, and algorithmic insufficiencies a.k.a. <em>optimization errors</em>.</p>
+</div>
+</div>
+<div class="section" id="what-is-expected-performance">
+<h3>What is expected performance?<a class="headerlink" href="#what-is-expected-performance" title="Permalink to this headline">¶</a></h3>
+<p>One of the important notions that is utilized in this paper is <em>expected performance</em>: this is basically the idea that an LEC performs as expected, be that giving an accurate output or an erroneous one. What it essentially means is that you will see outputs from the system, whether accurate or erroneous, as was exhibited during the training, validation, and calibration phases of the LEC.</p>
+<div class="section" id="expected-and-accurate-ea-hcm">
+<h4>Expected and Accurate (EA) HCM<a class="headerlink" href="#expected-and-accurate-ea-hcm" title="Permalink to this headline">¶</a></h4>
+<p>The system gives outputs that are accurate (as per the specification of the system) yet they induce hazardous system states.</p>
+<p><strong>An example</strong> : Say you have an autonomous vehicle (AV) that relies on lane markings to localize itself, in this case, if some of those lane markings are removed for some reason, the sensors might <em>latch on</em> to other lane markings and thus correctly align themselves with that and maintain appropriate distance except that they are <strong>not</strong> in the right lane and can lead to an accident.</p>
+<p><strong>When can this arise?</strong> : This can happen in the case of sensor malfunctions or <em>different-from-normal</em> environmental conditions within which the system is operating. This might happen because of inadequate representation in the data that is used to train the system or in the optimization algorithm that is used.</p>
+</div>
+<div class="section" id="expected-with-error-ee-hcm">
+<h4>Expected with Error (EE) HCM<a class="headerlink" href="#expected-with-error-ee-hcm" title="Permalink to this headline">¶</a></h4>
+<p>The system gives outputs that are erroneous with such a large magnitude of error that they violate the safety thresholds of the system.</p>
+<p><strong>An example</strong> : Building on the previous example, if the lane-keeping function has some deviation in the outputs whereby the errors are so large that, for example in estimating the distance to keep in the lane, instead of keeping the lane, it leads to lane departure and hence a hazardous state.</p>
+<p>*A special note here that adversarial perturbations *</p>
+<p><strong>When can this arise?</strong> : In the cases where there is inadequate representation in the training data, assumptions made in the building on the ML model, especially as it relates to the relationship required between the inputs, outputs, and the safety thresholds, and an inadequate coverage of the environmental conditions within which the system will be deployed.</p>
+</div>
+</div>
+<div class="section" id="what-is-unexpected-performance">
+<h3>What is unexpected performance?<a class="headerlink" href="#what-is-unexpected-performance" title="Permalink to this headline">¶</a></h3>
+<p>This refers to any behaviour from the system that is not observed during the validation of the LEC and is not expected to be seen in the <em>normal operating conditions</em> of the system. A thing to note here is that the definition of <em>normal</em> is something that probably emerges from the system specifications during the design phase but it requires more refinement if we’re to correctly utilize this taxonomy.
+This can happen because of unexpected feature interactions, and other emergent behaviour from the system that can cause problems when deployed in an environment where the conditions are different from the ones that the system was expected to run on.</p>
+<div class="section" id="how-do-we-avoid-this-unexpected-performance">
+<h4>How do we avoid this unexpected performance?<a class="headerlink" href="#how-do-we-avoid-this-unexpected-performance" title="Permalink to this headline">¶</a></h4>
+<p>Compared to the case of expected performance, this requires runtime detection, recovery, and architecture-level safeguards to prevent hazardous states from emerging.</p>
+</div>
+<div class="section" id="unexpected-and-accurate-ua-hcm">
+<h4>Unexpected and accurate (UA) HCM<a class="headerlink" href="#unexpected-and-accurate-ua-hcm" title="Permalink to this headline">¶</a></h4>
+<p>This occurs when you</p>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="what-does-this-mean-for-actionable-ai-ethics">
+<h3>What does this mean for Actionable AI Ethics?<a class="headerlink" href="#what-does-this-mean-for-actionable-ai-ethics" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>This is a great way to build more robustness into machine learning systems, especially from the perspective of having demonstrable and verifiable claims about the system.</p></li>
+<li><p>Given that the techniques mentioned here are system-agnostic, both from the perspective of the type of system within which the machine learning components are embedded and the type of machine learning itself, it serves as a great framework to complement other safety protocols within the organization.</p></li>
+<li><p>The assurance argumentation graphs also help to unearth potential blindspots when trying to ensure the safety of such systems and are a great supplement to reports that might need to be filed for auditing or regulatory purposes.</p></li>
+</ul>
+</div>
+<div class="section" id="questions-that-i-am-exploring">
+<h3>Questions that I am exploring<a class="headerlink" href="#questions-that-i-am-exploring" title="Permalink to this headline">¶</a></h3>
+<p><strong>If you have answers to any of these questions, please <a class="reference external" href="https://twitter.com/actionable_ai/status/1322406706073227264?s=20">tweet</a> and let me know!</strong></p>
+<ol class="simple">
+<li></li>
+<li></li>
+</ol>
+</div>
+<div class="section" id="potential-further-reading">
+<h3>Potential further reading<a class="headerlink" href="#potential-further-reading" title="Permalink to this headline">¶</a></h3>
+<p>A list of papers that I think might be interesting related to this paper.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://arxiv.org/abs/1912.06166">ABOUT ML: Annotation and Benchmarking on Understanding and Transparency of Machine Learning Lifecycles</a></p></li>
+<li><p><a class="reference external" href="https://arxiv.org/abs/1911.11932">Survey of Attacks and Defenses on Edge-Deployed Neural Networks</a></p></li>
+<li><p><a class="reference external" href="https://ieeexplore.ieee.org/document/8812789">Disruptive Innovations and Disruptive Assurance: Assuring Machine Learning and Autonomy</a></p></li>
+</ul>
+<p><em>Please note that this is a wish list of sorts and I haven’t read through the papers listed here unless specified otherwise (if I have read them, there will be a link from the entry to the page for that.)</em></p>
+</div>
+<div class="section" id="twitter-discussion">
+<h3>Twitter discussion<a class="headerlink" href="#twitter-discussion" title="Permalink to this headline">¶</a></h3>
+<p>I’ll write back here with interesting points that surface from the Twitter discussion.</p>
+<p><em>If you have comments and would like to discuss more, please leave a <a class="reference external" href="https://twitter.com/actionable_ai/status/1322406706073227264?s=20">tweet here</a>.</em></p>
+</div>
+<div class="section" id="sign-up-for-the-newsletter">
+<h3>Sign up for the newsletter<a class="headerlink" href="#sign-up-for-the-newsletter" title="Permalink to this headline">¶</a></h3>
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<p>To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the <a class="reference external" href="https://actionableaiethics.substack.com">Actionable AI Ethics newsletter</a></p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="automating_informality.html" title="previous page">Automating informality: On AI and labour in the global South</a>
+    <a class='right-next' id="next-link" href="books.html" title="next page">Books</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Abhishek Gupta<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>

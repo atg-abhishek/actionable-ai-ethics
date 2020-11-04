@@ -1,5 +1,9 @@
 - file: intro
 - file: readings
   sections:
-    - file: fairness_definitions_explained
-    - file: automating_informality
+    - file: papers
+      sections:
+        - file: fairness_definitions_explained
+        - file: automating_informality
+        - file: hazard_modes
+    - file: books
