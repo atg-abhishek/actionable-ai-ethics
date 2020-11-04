@@ -18,6 +18,7 @@ To stay up-to-date with the latest content in terms of what I am reading and thi
 | ------------- | ------------- | 
 |  October 29 2020 | [Fairness Definitions Explained](./fairness_definitions_explained.md)  |
 |  October 30 2020 | [Automating informality: On AI and labour in the global South](./automating_informality.md)       |
+| October 31 2020 | [Hazard Contribution Modes of Machine Learning Components](./hazard_modes.md) |
 
 ## Feedback
 

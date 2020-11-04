@@ -19,7 +19,7 @@
 
 ### Questions that I am exploring
 
-**If you have answers to any of these questions, please [tweet]() and let me know!
+**If you have answers to any of these questions, please [tweet]() and let me know!**
 
 1. 
 2. 
