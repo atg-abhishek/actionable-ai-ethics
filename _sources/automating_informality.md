@@ -8,7 +8,7 @@
 
 ### One-line summary
 
-A much needed perspective on the specifities of the labor impacts of AI in the Global South, this paper lays out the implications of the prevalent informal labor markets in India along with the associated social hierarchies that impose a double precarity on the lives of the workers because of marginalization through both digital and reinforced societal inequities.
+A much needed perspective on the specificities of the labor impacts of AI in the Global South, this paper lays out the implications of the prevalent informal labor markets in India along with the associated social hierarchies that impose a double precarity on the lives of the workers because of marginalization through both digital and reinforced societal inequities.
 
 <iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 

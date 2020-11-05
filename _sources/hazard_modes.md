@@ -8,7 +8,7 @@
 
 ### One-line summary
 
-This paper provides a categorization framework for assessing the safety posture of a system that consists of embdedded machine learning components. It additionally ties that in with a safety assurance reasoning scheme that helps to provide justifiable and demonstrable mechanisms for proving the safety of the system.
+This paper provides a categorization framework for assessing the safety posture of a system that consists of embedded machine learning components. It additionally ties that in with a safety assurance reasoning scheme that helps to provide justifiable and demonstrable mechanisms for proving the safety of the system.
 
 <iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
