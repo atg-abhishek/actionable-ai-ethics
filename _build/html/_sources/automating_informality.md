@@ -8,9 +8,13 @@
 
 ### One-line summary
 
-A much needed perspective on the specifities of the labor impacts of AI in the Global South, this paper lays out the implications of the prevalent informal labor markets in India along with the associated social hierarchies that impose a double precarity on the lives of the workers because of marginalization through both digital and reinforced societal inequities.
+A much needed perspective on the specificities of the labor impacts of AI in the Global South, this paper lays out the implications of the prevalent informal labor markets in India along with the associated social hierarchies that impose a double precarity on the lives of the workers because of marginalization through both digital and reinforced societal inequities.
 
 <iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
+If you enjoy the content on this page, you can support my work by [buying me a coffee](https://buymeacoffee.com/abhishekgupta)
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
 
 ### Definitions
 
@@ -89,3 +93,9 @@ I'll write back here with interesting points that surface from the Twitter discu
 <iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the [Actionable AI Ethics newsletter](https://actionableaiethics.substack.com)
+
+### Support me with a coffee 
+
+If you enjoy the content on this page, you can support my work by [buying me a coffee](https://buymeacoffee.com/abhishekgupta)
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>

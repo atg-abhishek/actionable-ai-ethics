@@ -12,11 +12,18 @@ To find out about  [papers and articles](papers.md) that I find interesting in t
 
 To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the [Actionable AI Ethics newsletter](https://actionableaiethics.substack.com)
 
+## Support me with a coffee
+
+If you enjoy the content on this page, you can support my work by [buying me a coffee](https://buymeacoffee.com/abhishekgupta)
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+
 ## Table of Contents
 
 | Date  | Entry | Rating (5 points) | 
 | ------------- | ------------- | ------------- | 
-|October 2020| [Exhalation](https://www.goodreads.com/book/show/41160292-exhalation) |4|
+|November 2020| [Is this anything?](https://www.goodreads.com/book/show/50722115-is-this-anything) |5|
+|November 2020| [Exhalation](https://www.goodreads.com/book/show/41160292-exhalation) |4|
 |October 2020| [The Andromeda Strain](https://www.goodreads.com/book/show/7670.The_Andromeda_Strain) | 5 |
 |October 2020| [The Future Computed: Artificial Intelligence and its Role in Society](https://www.goodreads.com/book/show/39144913-the-future-computed) | 5 |
 |October 2020| [Privacy is Power: Reclaiming Democracy in the Digital Age](https://www.goodreads.com/book/show/51781479-privacy-is-power) | 5 |
