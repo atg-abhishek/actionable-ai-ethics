@@ -85,9 +85,69 @@ Compared to the case of expected performance, this requires runtime detection, r
 
 #### Unexpected and accurate (UA) HCM
 
-This occurs when you 
+This can occur in a situation where there is no notion of the ground truth. 
+An example given in the paper that illustrates the other condition under which UA HCM can emerge is when there rules are learned that might be completely appropriate under many circumstances but those that fail to capture established conventions that are known through implicit knowledge.
+
+The example goes as follows: in uncontrolled airspace, if there are two planes that suddenly find themselves on a head-on collision course, the convention dictates that both of them bank to their respective rights to avoid collision. 
+But, if an automated aviation system is to learn the rules on its own, it might figure out that in many cases banking to the left saves it from collision with approaching objects and in this case would learn something that would clearly cause a collision when the human follows the convention and the automated system doesn't know about that convention.
+
+**What is covariate shift?**
+
+It is a change in the dataset distribution, specifically on the inputs to a system that have a different distribution from the one that it was trained on. 
+
+**What is prior shift?**
+
+Another kind of change in the dataset distribution when during operation the distribution of the outputs is different from the ones that it produced during training.
+
+**What is concept shift?**
+
+Combining both of the above in a sense, this is a shift in the joint distribution of inputs and outputs during operation compared to what the LEC had during training.
+
+### So how do we manage HCMs?
+
+#### Under accurate and hazardous output
+
+We can take the following actions to mitigate the effects under this condition:
+* if you have information on potential precursors to hazardous conditions, reflect them in the training and validation data.
+* penalize these hazardous precursors appropriately during the training phase. 
+* comprehensive testing of the model and verification-based coverage of the precursors as identified above.
+
+#### Under hazardous output with error
+
+* have valid safety thresholds associated with the outputs of the LEC. 
+* reflect these thresholds in the training and validation data. 
+* reflect these approximately in the cost or loss functions during training. 
+* comprehensive model testing and verification that considers errors in relation to the overall performance of the system.
+
+#### Potential approaches
+
+**Prevention and Recovery**
+
+* comprehensive definition of the operating environment making it as rich as possible.
+* sufficiency of the training and validation data such that they are balanced, accurate, and complete.
+* contextually-relevant model validation techniques 
+
+**Layered Mitigation**
+
+*The nice thing with a nod to this approach in the paper is that it borrows from the best practices in cybersecurity as well where we don't rely on a single layer of controls to protect the system*
+
+* monitor your system during runtime to find instances where it violates the safety thresholds that you have put in place.
+* have ways to disengage the system in case something goes wrong, akin to a circuit breaker. **I am currently working on a paper for this, [shoot me an email](mailto:abhishek@montrealethics.ai) if you'd like to collaborate on that!**
+* have redundant functions deployed in the LEC so that there is a way to reach consensus in case there is a potential to violate the safety thresholds and then look for consensus to reinforce the above two mechanisms.
+
+### Safety Assurance Arguments 
+
+The following figure does a good job of showcasing what a safety assurance argumentation can look like: 
+
+![Safety Assurance Argumentation Pattern](./safety_arguments.png)
+
+Basically, this provides an assurance mechanism that the identified HCMs are acceptably mitigated in a demonstrable manner for stakeholders who need to be assured that the system will behave within acceptable bounds in operation. *I encourage you to refer to the paper for all the details on what each of the symbols mean and how to build such diagrams for your systems.*
 
 ### Conclusion 
+
+Ultimately, this paper provides a neat framework for thinking about the safety implications of a system in operation and provides not only a taxonomy for thinking about the potential hazards, but also provides a framework for demonstrating the acceptability of different mitigation techniques. 
+
+The gap filled from previous work is that it provides a holistic approach towards linking the assurances during the lifecycle of an LEC with the evidence using HCMs.
 
 ### What does this mean for Actionable AI Ethics?
 
@@ -99,8 +159,9 @@ This occurs when you
 
 **If you have answers to any of these questions, please [tweet](https://twitter.com/actionable_ai/status/1322406706073227264?s=20) and let me know!**
 
-1. 
-2. 
+1. To what extent are these being practised in the industry today?
+2. What is the degree of awareness on the part of the practitioners and how rigorously do they adhere to these considerations?
+3. I really liked the **layered mitigation** approach and wonder if there are exemplars of this in practice?
 
 ### Potential further reading
 
