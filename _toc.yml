@@ -6,5 +6,6 @@
         - file: fairness_definitions_explained
         - file: automating_informality
         - file: hazard_modes
+        - file: lets_talk_privacy.md
     - file: books
 - file: tools
