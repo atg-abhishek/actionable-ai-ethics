@@ -22,6 +22,7 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 | Date  | Entry | Rating (5 points) | 
 | ------------- | ------------- | ------------- | 
+|November 2020| [Build a Career in Data Science](https://www.manning.com/books/build-a-career-in-data-science) |4|
 |November 2020| [Is this anything?](https://www.goodreads.com/book/show/50722115-is-this-anything) |5|
 |November 2020| [Exhalation](https://www.goodreads.com/book/show/41160292-exhalation) |4|
 |October 2020| [The Andromeda Strain](https://www.goodreads.com/book/show/7670.The_Andromeda_Strain) | 5 |
