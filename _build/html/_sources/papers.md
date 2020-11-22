@@ -26,6 +26,7 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 |  October 30 2020 | [Automating informality: On AI and labour in the global South](./automating_informality.md)       |
 | October 31 2020 | [Hazard Contribution Modes of Machine Learning Components](./hazard_modes.md) |
 |November 1 2020|[Project Let's Talk Privacy Full Report](./lets_talk_privacy.md)|
+|November 22 2020| [“Cool Projects” or “Expanding the Efficiency of the Murderous American War Machine?”](./american_war_machine.md) |
 
 ## Feedback
 
