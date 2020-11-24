@@ -6,7 +6,8 @@
         - file: fairness_definitions_explained
         - file: automating_informality
         - file: hazard_modes
-        - file: lets_talk_privacy.md
-        - file: american_war_machine.md
+        - file: lets_talk_privacy
+        - file: american_war_machine
+        - file: ai_safety_great_powers
     - file: books
 - file: tools
