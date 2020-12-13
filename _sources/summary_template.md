@@ -16,7 +16,7 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 ### Conclusion 
 
-### What does this mean for Actionable AI Ethics?
+### What does this mean for [Actionable AI Ethics](https://atg-abhishek.github.io/actionable-ai-ethics)?
 
 * 
 * 

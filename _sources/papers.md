@@ -28,6 +28,7 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 |November 1 2020|[Project Let's Talk Privacy Full Report](./lets_talk_privacy.md)|
 |November 22 2020| [“Cool Projects” or “Expanding the Efficiency of the Murderous American War Machine?”](./american_war_machine.md) |
 |November 23 2020| [AI Safety, Security, and Stability Among Great Powers](./ai_safety_great_powers.md) |
+|November 27 2020| [Disability, Bias, and AI](./disability_bias_ai.md)|
 
 ## Feedback
 

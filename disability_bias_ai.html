@@ -1,0 +1,594 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disability, Bias, and AI &#8212; Actionable AI Ethics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Books" href="books.html" />
+    <link rel="prev" title="AI Safety, Security, and Stability Among Great Powers" href="ai_safety_great_powers.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/abhishek.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Actionable AI Ethics</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to Actionable AI Ethics
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="readings.html">
+   Readings
+  </a>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="reference internal" href="papers.html">
+     Papers
+    </a>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="fairness_definitions_explained.html">
+       Fairness Definitions Explained
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="automating_informality.html">
+       Automating informality: On AI and labour in the global South
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="hazard_modes.html">
+       Hazard Contribution Modes of Machine Learning Components
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="lets_talk_privacy.html">
+       Project Let’s Talk Privacy Full Report
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="american_war_machine.html">
+       “Cool Projects” or “Expanding the Efficiency of the Murderous American War Machine?”
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ai_safety_great_powers.html">
+       AI Safety, Security, and Stability Among Great Powers
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Disability, Bias, and AI
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="books.html">
+     Books
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tools.html">
+   AI Ethics Tool of the Week
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/disability_bias_ai.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#one-line-summary">
+     One-line summary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-questions">
+     Key questions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#terms-and-concepts-from-disability-studies">
+     Terms and concepts from disability studies
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#models-of-disability">
+       Models of disability
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#key-terms">
+       Key terms
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#discrepancies-in-development-and-deployment">
+       Discrepancies in development and deployment
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#design-considerations">
+         Design considerations
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#biases-at-the-intersection-of-ai-and-disability">
+     Biases at the intersection of AI and disability
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-does-normal-mean-to-ai">
+     What does normal mean to AI?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reverse-turing-tests-causing-harm">
+       Reverse Turing Tests causing harm
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#can-additional-data-help">
+       Can additional data help?
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#work-and-disability-in-the-context-of-ai">
+     Work and Disability in the context of AI
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#are-there-accountability-measures">
+     Are there accountability measures?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-ethical-concerns">
+     Other ethical concerns
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-challenges">
+     Key challenges
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusion">
+     Conclusion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-does-this-mean-for-actionable-ai-ethics">
+     What does this mean for Actionable AI Ethics?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#questions-that-i-am-exploring">
+     Questions that I am exploring
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#potential-further-reading">
+     Potential further reading
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#twitter-discussion">
+     Twitter discussion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sign-up-for-the-newsletter">
+     Sign up for the newsletter
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#support-me-with-a-coffee">
+     Support me with a coffee
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="disability-bias-and-ai">
+<h1>Disability, Bias, and AI<a class="headerlink" href="#disability-bias-and-ai" title="Permalink to this headline">¶</a></h1>
+<p><strong>Authors</strong>: Meredith Whittaker, Meryl Alper, Cynthia L. Bennett, Sara Hendren, Liz Kaziunas, Mara Mills, Meredith Ringel Morris, Joy Rankin, Emily Rogers, Marcel Salas, Sarah Myers West</p>
+<p><a class="reference external" href="https://ainowinstitute.org/disabilitybiasai-2019.pdf">Paper link</a></p>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="one-line-summary">
+<h3>One-line summary<a class="headerlink" href="#one-line-summary" title="Permalink to this headline">¶</a></h3>
+<p>A seminal paper that provides the most comprehensive discussion on how people with disabilities are excluded from the design and development of AI systems.
+It also situates this in existing research from the field and provides concrete recommendations on how AI practitioners can do better so that we don’t just engage in <em>ethics washing</em> but actually centre the processes around those with lived experiences to build systems that don’t just <em>include</em> but also <em>empower</em> people.</p>
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<p>If you enjoy the content on this page, you can support my work by <a class="reference external" href="https://buymeacoffee.com/abhishekgupta">buying me a coffee</a></p>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+</div>
+<div class="section" id="key-questions">
+<h3>Key questions<a class="headerlink" href="#key-questions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>What can we do to draw from disability activism and scholarship to ensure protections for those who are deemed “outside the norm” by AI systems?</p></li>
+<li><p>Given that AI shapes the world, we need to account for the implications that exclusion as mentioned above causes to people and what we can do to recognize and address that proactively.</p></li>
+<li><p>In the service of disabled people, how can we lean on existing legislation to fight for accountability?</p></li>
+<li><p>Can we learn from the work that has been done in advocating for rights and design changes in the physical world into the digital realm?</p></li>
+<li><p>What are ways that we can assess that the changes being made to the system are actually benefitting people?</p></li>
+<li><p>What are some of the accompanying changes at a systemic level in addition to technical interventions that can help with this?</p></li>
+</ul>
+</div>
+<div class="section" id="terms-and-concepts-from-disability-studies">
+<h3>Terms and concepts from disability studies<a class="headerlink" href="#terms-and-concepts-from-disability-studies" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Disabled people are <strong>heterogenous</strong>. One of the most important considerations for people so that we take into consideration not only the notions of <em>intersectionality</em>, but also limit applying blanket methodologies to people who might fall in the same “category” based on their expressed disability.</p></li>
+<li><p>We should have some <strong>opt-out</strong> mechanisms so that we don’t <em>impose</em> classifications on people without their consent, sometimes erroneously which can have severe implications.</p></li>
+<li><p>An example that articulates the problem in a very relevant fashion is how the LGBTQ community fought very hard to remove being gay as a condition from the DSM which had prior to its removal justified their mistreatment because of the enshrinement of their identity as a problem in formal documentation.</p></li>
+</ul>
+<div class="section" id="models-of-disability">
+<h4>Models of disability<a class="headerlink" href="#models-of-disability" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Using medical definitions of disability as those falling outside of what they think to be <em>normal</em> bodies stands the risk of entrenching stigmatization further, and encourage exploitation of individuals.</p></li>
+<li><p>The <strong>social model</strong> of disability instead looks at how the environment, both built and social, leads to disability rather than being something located in the body of the individual.</p>
+<ul>
+<li><p>The key insight with this is that it places the onus of interventions at a systemic level rather than placing it all on the individual.</p></li>
+<li><p>An important consideration that the paper highlights is how people from African American, LGBTQ, women have at varying times been described as disabled which led to a lot of marginalization, thus the social model offers a lot of appropriate consideration in thinking about disability.</p></li>
+</ul>
+</li>
+<li><p>Disability is also not static and can wax and wane over time even within the same body, something else that we must keep in mind when we build AI systems.</p></li>
+</ul>
+</div>
+<div class="section" id="key-terms">
+<h4>Key terms<a class="headerlink" href="#key-terms" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The paper provides definitions like <strong>non-disabled</strong> that help to recenter the conversation in a way that is empowering rather than using phraseology like able-bodied which marginalizes the concerns of the disabled community.</p></li>
+<li><p>One thing that particularly caught my attention was the reframing of the phrase <strong>assistive technology</strong> describing how all technologies are meant to assist us but framing those used by disabled people as such gives a ring of paternalism and advances a <em>technological fix</em> rather than thinking about things like community education, support, and social change.</p>
+<ul>
+<li><p>This is again reflected in the fact that we simply can’t add disability as another axis to consider in the bias discussion but instead should consider the lived experiences so that the terms used and how they are represented in the system is adequately represented in the system.</p></li>
+<li><p>The above will also aid in the appropriate emphasis on the non-technical measures that are required in addition to the use of technology to meets the need of these communities.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="discrepancies-in-development-and-deployment">
+<h4>Discrepancies in development and deployment<a class="headerlink" href="#discrepancies-in-development-and-deployment" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Another consideration when thinking about technology as a vector for change is that access to technology is highly stratified meaning there is inequity in access both because of financial and distribution reasons.</p></li>
+<li><p>There are also problems when this is used as a <em>pretense</em> for developing solutions that might seek to initially meet the needs of the community, but upon new-found success in the wider market, those are abandoned in the interest of pursuing bigger markets and profits.</p></li>
+<li><p>It is also wrong when the community is used as a testbed for new technologies, <em>to iron out the kinks</em> before rolling it out for wider use and ignoring the adequate consideration and participation of the people from the community.</p></li>
+<li><p>A lot of ethical decisions might already have been made in terms of the limits that the technology will impose on its user, thus stripping agency from the users.</p></li>
+</ul>
+<div class="section" id="design-considerations">
+<h5>Design considerations<a class="headerlink" href="#design-considerations" title="Permalink to this headline">¶</a></h5>
+<ul class="simple">
+<li><p>For example when thinking about transcription services using AI, they are meant to be standardized and implement broad-based gestures and vocabulary but when this is done by humans, they often tailor their communication in a way to be more personal and connected to the individual.</p></li>
+<li><p>This personalization might be lost through the interjection of automated systems into such fields.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="biases-at-the-intersection-of-ai-and-disability">
+<h3>Biases at the intersection of AI and disability<a class="headerlink" href="#biases-at-the-intersection-of-ai-and-disability" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>People with disabilities are affected non-uniformly across identity groups when it comes to the AI-bias debate and it is problematic that most current discussions on AI bias don’t take this into account.</p></li>
+<li><p>For example, in content moderation practices, the paper points to the example of how content with terms about disability is marked as <strong>toxic</strong> more frequently than those without. This has severe implications in the ability of people to freely express themselves, gather and discuss issues online.</p></li>
+<li><p>When people from the disabled community are excluded, there is a severe risk of misunderstanding and misrepresenting the issues to the point that they create more harm than good when making decisions on how to address bias in the AI systems.</p></li>
+<li><p>An example that potentially highlights this problem is how the 2018 Arizona Uber incident failed to take into account the pedestrian that the car struck, partially because it was confused since she had a bicycle with her. This might imply that people on wheelchairs or scooters might also fail to be adequately recognized and run into more accidents with self-driving vehicles around.</p></li>
+</ul>
+<blockquote>
+<div><p>“Indeed, the way in which “disability” resists fitting into neat arrangements points to bigger questions about how other identity categories, such as race, sexual orientation, and gender, are (mis)treated as essential, fixed classifications in the logics of AI systems, and in much of the research examining AI and bias.”</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Another particularly poignant point made in the paper is that disability is more than the physical and mental posture of the individual and more so as to how society responds to it.</p></li>
+</ul>
+</div>
+<div class="section" id="what-does-normal-mean-to-ai">
+<h3>What does normal mean to AI?<a class="headerlink" href="#what-does-normal-mean-to-ai" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>We learned above that at varying times, different groups have been designated as disabled leading to unfortunate consequences.</p></li>
+<li><p>But, in the case of automated systems, the harms are easy to magnify.</p></li>
+<li><p>Especially when the systems are making significant decisions about someone’s life, we don’t want to have rigid, faulty categories that can jeopardize the safety of individuals.</p></li>
+<li><p>An example from the Deaf community mentions how instead of using technology to <em>bring them over to the hearing world</em>, they believe the failure to be the unwillingness of people to learn sign language in communicating them as the problem.</p></li>
+<li><p>With invigilation systems relying on emotion and face recognition, especially under the pandemic of 2020, there are visceral risks to the ability of people to participate in activities because of different notions of <em>normal</em> within the system.</p></li>
+</ul>
+<div class="section" id="reverse-turing-tests-causing-harm">
+<h4>Reverse Turing Tests causing harm<a class="headerlink" href="#reverse-turing-tests-causing-harm" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>A reverse Turing Test is one where we are asked to prove our humanity to the machine, often for security purposes.</p></li>
+<li><p>But, it is most of the time looking for a specific kind of human, one that falls within its definition of <em>normal</em>. What this means is that it ignores the potential that people with different conditions might be slow to click on things, or might have speech differences which might flag them as anomalies unnecessarily.</p></li>
+<li><p>While not a Turing Test, Amazon in its warehouses utilizes monitoring software that is meant to extract as much labor as possible from its workers. This is made worse by the fact that it leads to injuries and places an even greater burden on those with disabilities.</p></li>
+<li><p>Sometimes, technology running in the background such as mouse movements and click actions on a webpage can be surreptitiously used to infer whether someone has a disability, certainly something that is not only nefarious but done without consent from the users visiting that webpage.</p></li>
+</ul>
+</div>
+<div class="section" id="can-additional-data-help">
+<h4>Can additional data help?<a class="headerlink" href="#can-additional-data-help" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>According to the examples in the paper, this might only serve to reinforce the normative model at the core of the AI system which might further exacerbate the problem.</p></li>
+<li><p>Even when more data is included, there is a problem that not only does it not adequately represent people but that it also intrudes of privacy through unnecessary surveillance in the interest of capturing more data.</p></li>
+<li><p>More so, the risk is then pushed onto the historically marginalized groups while the benefits accrue to already powerful actors that stand to make a profit from the deployment of such systems.</p></li>
+<li><p>Often those who have rare conditions can’t be sufficiently protected when their data is collected in the interests of making more inclusive AI systems.</p></li>
+<li><p>Additionally, there is no guarantee either that such data will be kept out of the hands of insurance companies or other actors who can stand to benefit from this information by differentially charging those people.</p></li>
+<li><p>As is commonplace in the AI world, in collecting large-scale data, clickworkers are often employed to label data and they might be provided with little or no guidance as to what disability means and they might erroneously label data in way that reinforces the normative model and further entrenches discrepancies in how people with disabilities are addressed by AI systems.</p></li>
+<li><p>Considerations about the regional disparities in this discussion, as I’ve pointed out with my co-author Victoria in an <a class="reference external" href="https://www.technologyreview.com/2020/09/14/1008323/ai-ethics-representation-artificial-intelligence-opinion/">MIT Technology Review article</a>, are important to consider. In an example about the differences between how autism might be expressed and perceived, differences in children in Bangladesh vs. America created differential results skewing the kind of support that was provided.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="work-and-disability-in-the-context-of-ai">
+<h3>Work and Disability in the context of AI<a class="headerlink" href="#work-and-disability-in-the-context-of-ai" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>In systems that are used to automatically scrape data and make decisions about candidates in hiring, even when companies manufacturing these systems claim that they are able to adequately able to address biases on the disability front, there is no guarantee that if such a determination is made by the system and provided to the employer making the decision, harm won’t be avoided.</p></li>
+<li><p>In fact, it exacerbates the problem by giving the decision-makers even more data (perhaps surfacing an unexpressed disability) that can be used to discriminate against individuals while simultaneously stripping away their ability to bring suits against the employers in case they are discriminated against because of the opacity of the system.</p></li>
+<li><p>This weakens the protections offered by the ADA in the United States as an example.</p></li>
+<li><p>Some companies who receive subsidies from the government to employ people with disabilities might use tactics like compensating people with gift cards instead of money creating unequal working conditions and structures aggravating harm in the workplace.</p></li>
+</ul>
+</div>
+<div class="section" id="are-there-accountability-measures">
+<h3>Are there accountability measures?<a class="headerlink" href="#are-there-accountability-measures" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>The credo of this community is “Nothing about us without us”</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>The above credo is importantly expressed in grant proposals as an example, but often organizations like the NSF don’t follow-up on whether that has been adhered to after the funding has been provided.</p></li>
+<li><p>Without accountability and follow-up, we risk creating a false sense of comfort when the real harms continue to remain unmitigated in the field.</p></li>
+</ul>
+</div>
+<div class="section" id="other-ethical-concerns">
+<h3>Other ethical concerns<a class="headerlink" href="#other-ethical-concerns" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>People might also forget that when using such <em>technological fixes</em>, we create additional concerns such as the compromising of bystander privacy, say for example, when a vision system is used to aid someone with visual impairments.</p></li>
+<li><p>There is also a locking in of corporate interests in creating a dependence on such systems when they close them off to scrutiny and modification that might limit the ability of people to fix them if they are broken or adapt them to better meet their needs.</p></li>
+</ul>
+</div>
+<div class="section" id="key-challenges">
+<h3>Key challenges<a class="headerlink" href="#key-challenges" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Given how these technologies are built in a very proprietary manner, it is hard at the moment to see how we can move from mere inclusion to agency and empowerment of individuals.</p></li>
+<li><p>Especially pointing to the case of the civil rights movement, the paper concludes on a powerful note mentioning that we lose when we let others speak for us.</p></li>
+</ul>
+</div>
+<div class="section" id="conclusion">
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h3>
+<p>The paper offers many rarely (for the AI community) discussed facets of what the experience of those with disabilities is when they interact with AI systems.
+It situates the concerns in the wider discussion of the disability rights movements and years of scholarship and activism in the space.
+It also provides some guidance on how people designing and developing these systems can do better when it comes to better meeting the needs of those with disabilities.</p>
+</div>
+<div class="section" id="what-does-this-mean-for-actionable-ai-ethics">
+<h3>What does this mean for <a class="reference external" href="https://atg-abhishek.github.io/actionable-ai-ethics">Actionable AI Ethics</a>?<a class="headerlink" href="#what-does-this-mean-for-actionable-ai-ethics" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>As we build AI systems, keeping ethics concerns should extend beyond the familiar concerns of racial and gender bias to consider intersectionality with other aspects which are traditionally excluded, like disability which raise unmitigated concerns even when traditional vectors are addressed.</p></li>
+<li><p>Even when technical systems are built with the explicit needs of people with disabilities, this doesn’t mean that ethics concerns like bias and privacy are automatically managed. It still requires deliberation and careful consideration, especially active efforts to include them in the design and development process.</p></li>
+</ul>
+</div>
+<div class="section" id="questions-that-i-am-exploring">
+<h3>Questions that I am exploring<a class="headerlink" href="#questions-that-i-am-exploring" title="Permalink to this headline">¶</a></h3>
+<p><strong>If you have answers to any of these questions, please <span class="xref myst">tweet</span> and let me know!</strong></p>
+<ol class="simple">
+<li><p>What have been barriers that have prevented AI practitioners from centring those with disabilities in system design and development?</p></li>
+<li><p>How do we better educate AI practitioners to learn from the work of the disability community to build products and services that respect the concerns raised in this paper?</p></li>
+</ol>
+</div>
+<div class="section" id="potential-further-reading">
+<h3>Potential further reading<a class="headerlink" href="#potential-further-reading" title="Permalink to this headline">¶</a></h3>
+<p>A list of papers that I think might be interesting related to this paper.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://link.springer.com/article/10.1007/s43681-020-00004-5">Artificial intelligence and disability: too much promise, yet too little substance?</a></p></li>
+<li><p><a class="reference external" href="https://onlinelibrary.wiley.com/doi/full/10.1111/dmcn.14328">Chaos theory and artificial intelligence may provide insights on disability outcomes</a></p></li>
+</ul>
+<p><em>Please note that this is a wish list of sorts and I haven’t read through the papers listed here unless specified otherwise (if I have read them, there will be a link from the entry to the page for that.)</em></p>
+</div>
+<div class="section" id="twitter-discussion">
+<h3>Twitter discussion<a class="headerlink" href="#twitter-discussion" title="Permalink to this headline">¶</a></h3>
+<p>I’ll write back here with interesting points that surface from the Twitter discussion.</p>
+<p><em>If you have comments and would like to discuss more, please leave a <span class="xref myst">tweet here</span>.</em></p>
+</div>
+<div class="section" id="sign-up-for-the-newsletter">
+<h3>Sign up for the newsletter<a class="headerlink" href="#sign-up-for-the-newsletter" title="Permalink to this headline">¶</a></h3>
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<p>To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the <a class="reference external" href="https://actionableaiethics.substack.com">Actionable AI Ethics newsletter</a></p>
+</div>
+<div class="section" id="support-me-with-a-coffee">
+<h3>Support me with a coffee<a class="headerlink" href="#support-me-with-a-coffee" title="Permalink to this headline">¶</a></h3>
+<p>If you enjoy the content on this page, you can support my work by <a class="reference external" href="https://buymeacoffee.com/abhishekgupta">buying me a coffee</a></p>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="ai_safety_great_powers.html" title="previous page">AI Safety, Security, and Stability Among Great Powers</a>
+    <a class='right-next' id="next-link" href="books.html" title="next page">Books</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Abhishek Gupta<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>
