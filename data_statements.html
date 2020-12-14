@@ -1,0 +1,521 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science &#8212; Actionable AI Ethics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="“Cool Projects” or “Expanding the Efficiency of the Murderous American War Machine?”" href="american_war_machine.html" />
+    <link rel="prev" title="Project Let’s Talk Privacy Full Report" href="lets_talk_privacy.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/abhishek.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Actionable AI Ethics</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to Actionable AI Ethics
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="readings.html">
+   Readings
+  </a>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="reference internal" href="papers.html">
+     Papers
+    </a>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="fairness_definitions_explained.html">
+       Fairness Definitions Explained
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="automating_informality.html">
+       Automating informality: On AI and labour in the global South
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="hazard_modes.html">
+       Hazard Contribution Modes of Machine Learning Components
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="lets_talk_privacy.html">
+       Project Let’s Talk Privacy Full Report
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="american_war_machine.html">
+       “Cool Projects” or “Expanding the Efficiency of the Murderous American War Machine?”
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ai_safety_great_powers.html">
+       AI Safety, Security, and Stability Among Great Powers
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="disability_bias_ai.html">
+       Disability, Bias, and AI
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="books.html">
+     Books
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tools.html">
+   AI Ethics Tool of the Week
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/data_statements.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#one-line-summary">
+     One-line summary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-a-data-statement">
+     What is a data statement?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-terms">
+     Key terms
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bias">
+       Bias
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-will-data-statements-look-like">
+     What will data statements look like?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#potential-barriers-to-implementation-and-mitigation-strategies">
+     Potential barriers to implementation and mitigation strategies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#differences-from-related-work">
+     Differences from related work
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#implications-for-tech-policy">
+     Implications for tech policy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusion">
+     Conclusion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-does-this-mean-for-actionable-ai-ethics">
+     What does this mean for Actionable AI Ethics?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#questions-that-i-am-exploring">
+     Questions that I am exploring
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#potential-further-reading">
+     Potential further reading
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#twitter-discussion">
+     Twitter discussion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sign-up-for-the-newsletter">
+     Sign up for the newsletter
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#support-me-with-a-coffee">
+     Support me with a coffee
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="data-statements-for-natural-language-processing-toward-mitigating-system-bias-and-enabling-better-science">
+<h1>Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science<a class="headerlink" href="#data-statements-for-natural-language-processing-toward-mitigating-system-bias-and-enabling-better-science" title="Permalink to this headline">¶</a></h1>
+<p><strong>Authors</strong>: Emily M. Bender and Batya Friedman</p>
+<p><a class="reference external" href="https://www.aclweb.org/anthology/Q18-1041/">Paper link</a></p>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="one-line-summary">
+<h3>One-line summary<a class="headerlink" href="#one-line-summary" title="Permalink to this headline">¶</a></h3>
+<p>The paper provides a new methodological instrument to give people using a dataset a better idea about the generalizability of a dataset, assumptions behind it, what biases it might have, and implications from its use in deployment. It also details some of the accompanying changes required in the field writ large to enable this to function effectively.</p>
+</div>
+<div class="section" id="what-is-a-data-statement">
+<h3>What is a data statement?<a class="headerlink" href="#what-is-a-data-statement" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>A data statement is a characterization of a dataset that provides context to allow developers and users to better understand how experimental results might generalize, how software might be appropriately deployed, and what biases might be reflected in systems built on the software.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>A benefit that we might get from the use of data statements is that it will help with generalizability and reproducibility in the field, something that has been pointed out as a concern at many workshops like NeurIPS, ICML, and ICLR.</p></li>
+<li><p>A clarification that authors provide is the difference between ethical practice and sound science where having one doesn’t mean we necessarily get the other. You might get accurate results based on some metric giving you sound science but it doesn’t make the use of that technology ethical.</p></li>
+</ul>
+</div>
+<div class="section" id="key-terms">
+<h3>Key terms<a class="headerlink" href="#key-terms" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>While some of the common terms are fairly well-known in the NLP community, the paper sheds an important light on nuances to some of them for better understanding.</p></li>
+<li><p>For example, it talks about <strong>curators</strong> who are the people who make decisions, for example, on which search terms to use for gathering data, selecting where to look, who to interview, and other meta-level choices that have downstream implications.</p></li>
+<li><p>An interesting distinction made in the stakeholders is around those who are <strong>indirect stakeholders</strong>, for example, those whose data might be rendered invisible due to how search terms are processed and utilized in an NLP system.</p></li>
+</ul>
+<div class="section" id="bias">
+<h4>Bias<a class="headerlink" href="#bias" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Providing a very clear summary of what bias means in this context, they refer to how bias (in the social sense) occurs only when it is done <em>systematically</em> and leads to <em>unfair outcomes</em>.</p></li>
+<li><p>It also talks about <strong>pre-existing biases</strong> which have roots in social institutions, practices, and attitudes.</p></li>
+<li><p><strong>Technical biases</strong> stem from technical constraints and decisions.</p></li>
+<li><p><strong>Emergent biases</strong> are those that arise when a system is developed for one situation and is supplanted into another.</p></li>
+</ul>
+<p>An example that clarifies why we might need data statements in NLP is from research cited in this paper that points to how Mexican restaurants with similar star ratings got lower ratings on their reviews because of pre-existing biases against the word Mexican in the wider use of that term.</p>
+</div>
+</div>
+<div class="section" id="what-will-data-statements-look-like">
+<h3>What will data statements look like?<a class="headerlink" href="#what-will-data-statements-look-like" title="Permalink to this headline">¶</a></h3>
+<p>The paper provides a schema with a minimum set of items that must be included but also goes on to talk about how there will need to be some best practices that emerge from the field as they start to become more widely used.</p>
+<p>Here are the elements:</p>
+<ul class="simple">
+<li><p><strong>Curation Rationale</strong>: What were the decisions and assumptions that led to a certain data source being selected, both in the original and the sub-selection that might be made in the case of reuse?</p></li>
+<li><p><strong>Language Variety</strong>: Given that languages have different structures and might thus interact differently with the NLP algorithms, taking a tag from <a class="reference external" href="https://tools.ietf.org/rfc/bcp/bcp47.txt">BCP-47</a>, a standardized way to identify languages along with a prose description of that tagging will help in understanding the language captured in the dataset. In addition, paying attention to the dialect used will also help downstream researchers make appropriate decisions.</p></li>
+<li><p><strong>Speaker demographic</strong>: Here speaker is used to the generator of the text artifact. Having information on the demographics will also help to make determinations about language artifacts to expect in the dataset since people use language in differing fashion to project their identity. This should include:</p>
+<ul>
+<li><p>Age</p></li>
+<li><p>Gender</p></li>
+<li><p>Race/ethnicity</p></li>
+<li><p>Native language</p></li>
+<li><p>Socioeconomic status</p></li>
+<li><p>Number of different speakers represented</p></li>
+<li><p>Presence of disordered speech</p></li>
+</ul>
+</li>
+<li><p><strong>Annotator demographics</strong>: The same points as above are also essential for better understanding artifacts in the dataset because the <em>social address</em> of the annotators will determine how they interact with the data. Some attributes to capture here include:</p>
+<ul>
+<li><p>Age</p></li>
+<li><p>Gender</p></li>
+<li><p>Race/ethnicity</p></li>
+<li><p>Native language</p></li>
+<li><p>Socioeconomic status</p></li>
+<li><p>Training in linguistics/other relevant discipline</p></li>
+</ul>
+</li>
+<li><p><strong>Speech situation</strong>: We all realize that we speak quite differently in different contexts, depending on the situation we are in, who we are speaking to, etc. Capturing this information is also essential which should include:</p>
+<ul>
+<li><p>Time and place</p></li>
+<li><p>Modality (spoken/signed, written)</p></li>
+<li><p>Scripted/edited vs. spontaneous</p></li>
+<li><p>Synchronous vs. asynchronous interaction</p></li>
+<li><p>Intended audience</p></li>
+</ul>
+</li>
+<li><p><strong>Text characteristics</strong>: The genre and the topic will influence the text that shows up in the data.</p></li>
+<li><p><strong>Recording quality</strong>: Any particulars about how the recording was done and any limitations of the equipment will also help to understand any shortcomings that might show up in the dataset.</p></li>
+<li><p><strong>Other</strong>: This is the placeholder where best practices can be integrated as they evolve over time.</p></li>
+<li><p><strong>Provenance Index</strong>: In the case of reuse of the dataset, we can include information linking it to the origin to help people understand how the dataset has changed over time and if there are things that they should watch out for.</p></li>
+</ul>
+<p>An important point to note is that while it might seem onerous to repeat the information again and again for datasets that are commonplace in the NLP community, considering the data in new light every single instance will help people better understand the capabilities and limitations from that data in the new task at hand.</p>
+<ul class="simple">
+<li><p>Having a short form of the data statement between 60-100 words will also help direct inclusion in papers that are published which will be useful to have persistent reminders of the specificities of the data that is being used.</p></li>
+<li><p>The paper also provides two sample case studies which can be used to understand how the data statements might be used in practice.</p></li>
+<li><p>Even retroactive application of data statements has value, though they won’t be as good as making them right when the dataset is being created because of the loss of information over time unless there are strict records.</p></li>
+</ul>
+</div>
+<div class="section" id="potential-barriers-to-implementation-and-mitigation-strategies">
+<h3>Potential barriers to implementation and mitigation strategies<a class="headerlink" href="#potential-barriers-to-implementation-and-mitigation-strategies" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>If the ACL implements this as a requirement, those who are not yet members of ACL and are not aware of how to craft good data statements might face desk-rejection for their work.</p></li>
+<li><p>Having mentorship programs, training modules, and how-to guides will help to bridge this gap.</p></li>
+<li><p>These require time to craft (2-3 hours based on the experience of the authors) but the potential payoff is high and thus we must incentivize researchers to do so.</p></li>
+<li><p>They take up space in the paper if they are included and hence the authors ask that conferences exclude these from page and word limits.</p></li>
+<li><p>While excluding demographic information can obviate the need for ethics reviews in some instances, collection of this information might add that as a burden for projects that didn’t previously engage in that.</p></li>
+</ul>
+</div>
+<div class="section" id="differences-from-related-work">
+<h3>Differences from related work<a class="headerlink" href="#differences-from-related-work" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Some of the elements from data statements might ring familiar to those who are interested in this kind of things, I’ve linked some of those pieces of work at the bottom of this post. But, data statements do stand out in some regards in the sense that data sheets for datasets, as an example, for broader and thus left a lot of elements with too much flexibility which can make their application inconsistent.</p></li>
+<li><p>Similarly, algorithmic impact assessments also provide very high-level guidance but data statements provide more granularity making them more <em>actionable</em>!</p></li>
+</ul>
+</div>
+<div class="section" id="implications-for-tech-policy">
+<h3>Implications for tech policy<a class="headerlink" href="#implications-for-tech-policy" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Without the presence of clear information about the origins of the data and the limitations that are posed by their use in different systems, we might end up in situations where we limit the ability of citizens adversely affected by these systems to mount effective challenges because of the lack of sufficient evidence to back their claims.</p></li>
+<li><p>Having some sort of requirements in certification processes can also normalize and standardize the use of such instruments.</p></li>
+<li><p>The authors also advocate that we ensure that people using software give preference to those that come with such data statements over those that don’t to mount pressure on the rest of the community to adopt the practice.</p></li>
+</ul>
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<p>If you enjoy the content on this page, you can support my work by <a class="reference external" href="https://buymeacoffee.com/abhishekgupta">buying me a coffee</a></p>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+</div>
+<div class="section" id="conclusion">
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h3>
+<p>Data statements will provide many benefits to the field including better generalizability and reproducibility. It will empower stakeholders to be better informed about the capabilities and limitations of the system. For people in the industry it can be a forward-looking initiative that helps prevent PR nightmares because of overlooked areas.</p>
+</div>
+<div class="section" id="what-does-this-mean-for-actionable-ai-ethics">
+<h3>What does this mean for <a class="reference external" href="https://atg-abhishek.github.io/actionable-ai-ethics">Actionable AI Ethics</a>?<a class="headerlink" href="#what-does-this-mean-for-actionable-ai-ethics" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Having such documentation more well-integrated into the MLOps workflow will be crucial for the success of adoption and utilization. You can see my thoughts on that <a class="reference external" href="https://actionableaiethics.substack.com/p/actionable-ai-ethics-1-adopting-an">here</a>.</p></li>
+<li><p>Having domain-specific formats that are agreed upon by practitioners will be the way forward, and I encourage us as <em>Actionable AI Ethics</em> practitioners to share best practices and lessons that we learn in the use of such instruments in our work.</p></li>
+</ul>
+</div>
+<div class="section" id="questions-that-i-am-exploring">
+<h3>Questions that I am exploring<a class="headerlink" href="#questions-that-i-am-exploring" title="Permalink to this headline">¶</a></h3>
+<p><strong>If you have answers to any of these questions, please <a class="reference external" href="https://twitter.com/actionable_ai/status/1324581030825807872?s=20">tweet</a> and let me know!</strong></p>
+<ol class="simple">
+<li><p>What has been the progress so far in implementing such requirements in the field?</p></li>
+<li><p>What are some lessons that we can learn from things like the broader impact statements at different conference? What has worked and what hasn’t that can be applied here?</p></li>
+</ol>
+</div>
+<div class="section" id="potential-further-reading">
+<h3>Potential further reading<a class="headerlink" href="#potential-further-reading" title="Permalink to this headline">¶</a></h3>
+<p>A list of papers that I think might be interesting related to this paper.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://dl.acm.org/doi/10.1145/3183713.3193568">A Nutrition Label for Rankings</a></p></li>
+<li><p><a class="reference external" href="https://arxiv.org/abs/1803.09010">Datasheets for Datasets</a></p></li>
+<li><p><a class="reference external" href="https://dl.acm.org/doi/10.1145/3287560.3287596">Model Cards for Model Reporting</a></p></li>
+</ul>
+<p><em>Please note that this is a wish list of sorts and I haven’t read through the papers listed here unless specified otherwise (if I have read them, there will be a link from the entry to the page for that.)</em></p>
+</div>
+<div class="section" id="twitter-discussion">
+<h3>Twitter discussion<a class="headerlink" href="#twitter-discussion" title="Permalink to this headline">¶</a></h3>
+<p>I’ll write back here with interesting points that surface from the Twitter discussion.</p>
+<p><em>If you have comments and would like to discuss more, please leave a <a class="reference external" href="https://twitter.com/actionable_ai/status/1324581030825807872?s=20">tweet here</a>.</em></p>
+</div>
+<div class="section" id="sign-up-for-the-newsletter">
+<h3>Sign up for the newsletter<a class="headerlink" href="#sign-up-for-the-newsletter" title="Permalink to this headline">¶</a></h3>
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<p>To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the <a class="reference external" href="https://actionableaiethics.substack.com">Actionable AI Ethics newsletter</a></p>
+</div>
+<div class="section" id="support-me-with-a-coffee">
+<h3>Support me with a coffee<a class="headerlink" href="#support-me-with-a-coffee" title="Permalink to this headline">¶</a></h3>
+<p>If you enjoy the content on this page, you can support my work by <a class="reference external" href="https://buymeacoffee.com/abhishekgupta">buying me a coffee</a></p>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="lets_talk_privacy.html" title="previous page">Project Let’s Talk Privacy Full Report</a>
+    <a class='right-next' id="next-link" href="american_war_machine.html" title="next page">“Cool Projects” or “Expanding the Efficiency of the Murderous American War Machine?”</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Abhishek Gupta<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>
