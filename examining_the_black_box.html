@@ -1,0 +1,659 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examining the Black Box: Tools for Assessing Algorithmic Systems &#8212; Actionable AI Ethics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="“Cool Projects” or “Expanding the Efficiency of the Murderous American War Machine?”" href="american_war_machine.html" />
+    <link rel="prev" title="Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science" href="data_statements.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/abhishek.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Actionable AI Ethics</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to Actionable AI Ethics
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="readings.html">
+   Readings
+  </a>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="reference internal" href="papers.html">
+     Papers
+    </a>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="fairness_definitions_explained.html">
+       Fairness Definitions Explained
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="automating_informality.html">
+       Automating informality: On AI and labour in the global South
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="hazard_modes.html">
+       Hazard Contribution Modes of Machine Learning Components
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="lets_talk_privacy.html">
+       Project Let’s Talk Privacy Full Report
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="data_statements.html">
+       Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Examining the Black Box: Tools for Assessing Algorithmic Systems
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="american_war_machine.html">
+       “Cool Projects” or “Expanding the Efficiency of the Murderous American War Machine?”
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ai_safety_great_powers.html">
+       AI Safety, Security, and Stability Among Great Powers
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="disability_bias_ai.html">
+       Disability, Bias, and AI
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="books.html">
+     Books
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tools.html">
+   AI Ethics Tool of the Week
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/examining_the_black_box.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#one-line-summary">
+     One-line summary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-the-difference-between-an-algorithmic-audit-and-an-algorithmic-impact-assessment">
+     What is the difference between an algorithmic audit and an algorithmic impact assessment?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#algorithmic-audit">
+       Algorithmic audit
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#algorithmic-impact-assessment">
+       Algorithmic impact assessment
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-do-we-mean-by-audits">
+     What do we mean by audits?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-might-a-bias-audit-look-like">
+     What might a bias audit look like?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-are-some-tools-and-methodological-approaches-that-can-be-used-in-this-context">
+       What are some tools and methodological approaches that can be used in this context?
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-is-the-benefit-of-engaging-in-bias-audits">
+       What is the benefit of engaging in bias audits?
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-are-some-future-research-and-practice-priorities">
+       What are some future research and practice priorities?
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-regulatory-inspection">
+     What is regulatory inspection?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-are-the-future-research-and-practice-priorities">
+       What are the future research and practice priorities?
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-are-algorithmic-risk-assessments">
+     What are algorithmic risk assessments?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       What are the future research and practice priorities?
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-are-algorithmic-impact-evaluations">
+     What are algorithmic impact evaluations?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-are-some-future-practice-and-research-priorities">
+       What are some future practice and research priorities?
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusion">
+     Conclusion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-does-this-mean-for-actionable-ai-ethics">
+     What does this mean for Actionable AI Ethics?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#questions-that-i-am-exploring">
+     Questions that I am exploring
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#potential-further-reading">
+     Potential further reading
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#twitter-discussion">
+     Twitter discussion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sign-up-for-the-newsletter">
+     Sign up for the newsletter
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#support-me-with-a-coffee">
+     Support me with a coffee
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="examining-the-black-box-tools-for-assessing-algorithmic-systems">
+<h1>Examining the Black Box: Tools for Assessing Algorithmic Systems<a class="headerlink" href="#examining-the-black-box-tools-for-assessing-algorithmic-systems" title="Permalink to this headline">¶</a></h1>
+<p><strong>Authors</strong>: Ada Lovelace Institute and Data Kind UK</p>
+<p><a class="reference external" href="https://adalovelaceinstitute.org/report/examining-the-black-box-tools-for-assessing-algorithmic-systems/">Paper link</a></p>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="one-line-summary">
+<h3>One-line summary<a class="headerlink" href="#one-line-summary" title="Permalink to this headline">¶</a></h3>
+<p>The paper provides some much needed clarity on what assessment in algorithmic systems can look like taking it apart on the axes of when the assessment activities are carried out, who needs to be involved, the pieces being evaluated, and the maturity of the techniques.
+It also provides an understanding of some key terms used in the field and identifies the gaps in the current crop of methods as they relate to the axes mentioned above.</p>
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<p>If you enjoy the content on this page, you can support my work by <a class="reference external" href="https://buymeacoffee.com/abhishekgupta">buying me a coffee</a></p>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+</div>
+<div class="section" id="what-is-the-difference-between-an-algorithmic-audit-and-an-algorithmic-impact-assessment">
+<h3>What is the difference between an algorithmic audit and an algorithmic impact assessment?<a class="headerlink" href="#what-is-the-difference-between-an-algorithmic-audit-and-an-algorithmic-impact-assessment" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="algorithmic-audit">
+<h4>Algorithmic audit<a class="headerlink" href="#algorithmic-audit" title="Permalink to this headline">¶</a></h4>
+<p>The paper talks about two kinds of audits:</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">A targeted approach that is just focused on evaluating the system for bias.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Bias Audit</span></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">This concerns itself with evaluating the system for compliance with regulations and norms within the place that the system is operating in; it is typically performed by regulators and auditors.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Regulatory Inspection</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="algorithmic-impact-assessment">
+<h4>Algorithmic impact assessment<a class="headerlink" href="#algorithmic-impact-assessment" title="Permalink to this headline">¶</a></h4>
+<p>The paper also talks about two kinds of impact assessments:</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">This is an evaluation of the potential harms that might arise from the use of the system <em>before</em> it is launched into the world.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Algorithmic Risk Assessment</span></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">This is an evaluation of the system and its effects on its subjects <em>after</em> it has been launched into the world.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Algorithmic Impact Evaluation</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>So, the key difference between the two is just the temporal element.</p>
+<blockquote>
+<div><p>The goal of clarifying these terms is to move past confusion, create shared understanding and focus on the important work of developing and evaluating different approaches to algorithmic assessment.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="what-do-we-mean-by-audits">
+<h3>What do we mean by audits?<a class="headerlink" href="#what-do-we-mean-by-audits" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>In the computer science community, the term is mostly used to describe an evaluative suite of tests and other methods designed to ascertain whether the system behaves as intended by looking at its inputs and outputs.</p></li>
+<li><p>In the non-technical community, audits include a more comprehensive evaluation of the system to see its level of adherence to professed norms and regulations.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In that sense, the former is more so aligned with the <em>bias audit</em> while the latter is much more so aligned with the <em>regulatory inspection</em>.</p>
+</div>
+</div>
+<div class="section" id="what-might-a-bias-audit-look-like">
+<h3>What might a bias audit look like?<a class="headerlink" href="#what-might-a-bias-audit-look-like" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>This essentially takes the form of testing by researchers in the form of evaluating the system by running counterfactuals (differences on one aspect with the rest of the attributes being identical) to suss out if there are any discriminatory behaviours from the system.</p></li>
+<li><p>These are typically done in a <em>black-box</em> fashion since the researchers usually only have access to being able to send in inputs to the system and then observe the outputs from it.</p></li>
+</ul>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+What is a Black Box?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">This is the idea that we are unable to examine the contents and workings of a system (intentionally or unintentionally) and that limits our analysis to taking a look at the inputs of the system and the corresponding outputs.</p>
+<p class="card-text">This is then used to make inferences about what might be going on inside the system and how it might be working.</p>
+</div>
+</details><div class="section" id="what-are-some-tools-and-methodological-approaches-that-can-be-used-in-this-context">
+<h4>What are some tools and methodological approaches that can be used in this context?<a class="headerlink" href="#what-are-some-tools-and-methodological-approaches-that-can-be-used-in-this-context" title="Permalink to this headline">¶</a></h4>
+<p>Bias audits can be carried out by following one of the following three approaches as an example:</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">This is done by querying the system in question to figure out where there might be biased outcomes, but this risks running afoul of laws like the CFAA.</p>
+<p class="card-text">There are rulings recently that give leeway to researchers to engage in this but I caution checking first that you are in the clear before embarking on this method since it is quite easy to violate the ToS of the platform.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Scraping Audits</span></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">This involves the creation of fake accounts, CVs, etc. to ascertain how the system might respond to the varying inputs.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Sock Puppet Audits</span></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">This is done when there is a mass of people who participate in evaluating the behaviour of the system by, for example, installing a browser extension.</p>
+<p class="card-text"><a class="reference external" href="https://themarkup.org">The Markup</a> has done some fantastic work with this approach to figure out privacy leakages in various platforms.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Crowdsourced/Collaborative Audits</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>The uniting feature of all of these audits is that they have a targeted attribute that they are looking to evaluate the impact on.</p>
+<p>Often these are based on some scientific and technical definitions (which in themselves might be flawed!) but the goal is to arrive at an understanding on how the system might be discriminating on that particular attribute or set of attributes.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The most famous example of this is the <strong>Gender Shades</strong> project undertaken by Dr. Timnit Gebru and Dr. Joy Buolamwini that unearthed how facial recognition systems are biased against those with darker skin and those who are not male.</p>
+</div>
+</div>
+<div class="section" id="what-is-the-benefit-of-engaging-in-bias-audits">
+<h4>What is the benefit of engaging in bias audits?<a class="headerlink" href="#what-is-the-benefit-of-engaging-in-bias-audits" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>It leads to more awareness that can move platforms to change their working so that we have more just outcomes from the system.</p></li>
+<li><p>A multi-platform comparison also mounts peer pressure for the firms to do better so that they can retain their customer base and provide users with more information on which to choose to protect their rights.</p></li>
+</ul>
+</div>
+<div class="section" id="what-are-some-future-research-and-practice-priorities">
+<h4>What are some future research and practice priorities?<a class="headerlink" href="#what-are-some-future-research-and-practice-priorities" title="Permalink to this headline">¶</a></h4>
+<p>This is my favorite part of the paper since it lends itself more to the <strong>Actionable AI Ethics</strong> mindset which is what we really want to be getting at!</p>
+<p>The key things to be looking out for are:</p>
+<ol class="simple">
+<li><p>Making sure that we have more <strong>meta-literature</strong>* on how impactful bias audits have been.</p></li>
+<li><p>Conducting <strong>bias audits over time</strong> and tracking their results to see if changes arise from doing them.</p></li>
+<li><p><strong>Looking at audits in more than just the online context</strong>, especially in back-end systems that are used in the public sector as an example.</p></li>
+<li><p><strong>Examining the role of different funding instruments</strong> and the agenda that researchers have because of that when they conduct such audits.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="what-is-regulatory-inspection">
+<h3>What is regulatory inspection?<a class="headerlink" href="#what-is-regulatory-inspection" title="Permalink to this headline">¶</a></h3>
+<p>As mentioned before, this is supposed to be a more comprehensive evaluation of the system to see if there is adherence to the norms and regulations where the system is being deployed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Given that this is more <em>invasive</em> and requires more access, we need cooperation from the firms that are being evaluated and hence this falls better under the purview of regulators and auditors who have legal mandates to be able to compel the firms to such scrutiny.</p>
+</div>
+<p>The UK Government’s ICO Auditing framework provides a good sample of this approach and is one that can be used as a starting point for those who are looking to prepare themselves for such regulatory scrutiny.</p>
+<p>While this framework takes a more risk-based approach to align with the EU, in other regimes where that is not the case, you might also encounter cases with a rules-based approach.</p>
+<div class="section" id="what-are-the-future-research-and-practice-priorities">
+<h4>What are the future research and practice priorities?<a class="headerlink" href="#what-are-the-future-research-and-practice-priorities" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Thinking about what the current skills gaps are for regulators and auditors to effectively carry out the above roles is going to be important.</p></li>
+<li><p>In addition, there should be a forum where successes and failures can be shared with others to accelerate the knowledge building process.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The robustness of such an evaluation relies not just on the examination of the code, inputs, outputs, and the other <em>tangibles</em> but also the <strong>social context</strong> within which the system is going to be deployed because that leads to differential impacts and requires due consideration.</p>
+</div>
+</div>
+</div>
+<div class="section" id="what-are-algorithmic-risk-assessments">
+<h3>What are algorithmic risk assessments?<a class="headerlink" href="#what-are-algorithmic-risk-assessments" title="Permalink to this headline">¶</a></h3>
+<p>As alluded to in the tip above, these go beyond just the mandated requirements, and take a more holistic view of the system, especially the social context within which the system is deployed.</p>
+<p>An effort from the Canadian Federal Government has created an online questionnaire that gathers some basic data about your use case and then provides you with a list of requirements to build a <em>responsible AI</em> system after establishing a level of risk from it.</p>
+<p>Another approach called <em>stakeholder impact assessment</em> seeks to bring in people who will be directly and indirectly impacted by the system into making determinations about how to build a more responsible AI application and help to uncover blindspots in the expertise that is on board the internal development team.</p>
+<div class="section" id="id1">
+<h4>What are the future research and practice priorities?<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>Quite similar to the points raised in the other instruments, what we need here are:</p>
+<ul class="simple">
+<li><p>Ways to share the findings easily, building up a case-study bank that others can look into to take away valuable lessons.</p></li>
+<li><p>Sharing findings from other fields where such risk assessments have been conducted to make the approach in our field more robust.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="what-are-algorithmic-impact-evaluations">
+<h3>What are algorithmic impact evaluations?<a class="headerlink" href="#what-are-algorithmic-impact-evaluations" title="Permalink to this headline">¶</a></h3>
+<p>These are quite similar to the algorithmic risk assessments except that these are conducted after the system has already been deployed.</p>
+<p>The key thing to watch out for here is the degree to which the organizations to whom the recommendations are made actually implement the actions and whether they have the willingness to do so.</p>
+<p>Numerous cases in the past have demonstrated that there isn’t as much of an incentive to change behaviour, especially when there is the potential to lose business.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In the case of the Allegheny Family Screening Tool, after an evaluation done by researchers from Stanford that found there to not be too many problems with putting it into place, it gave the impression that it is ok to use algorithmic systems in practice.</p>
+<p>There have also been conflicting reports on the efficacy of the tool and we need to be careful when advocating for the deployment of more such automated tools through the legitimization of their use by such evaluation reports. There are a host of professional and ethical concerns which should be highlighted prior to even engaging in the practice of such an evaluation because post-hoc, they can provide the ammunition needed to continue their use without necessarily questioning if they should be used in the first place.</p>
+</div>
+<div class="section" id="what-are-some-future-practice-and-research-priorities">
+<h4>What are some future practice and research priorities?<a class="headerlink" href="#what-are-some-future-practice-and-research-priorities" title="Permalink to this headline">¶</a></h4>
+<p>Similar to the previous cases, having a more fleshed out set of use-cases where this has been tried along with some documented best practices for doing so effectively will be essential.</p>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h3>
+<p>The paper provided some much needed clarity on how different terms that are sometimes used interchangeably mean different things, have different audiences and also imply different requirements from a technical. organizational, and legal standpoint.</p>
+<p>Following some of the recommendations, especially in the <em>future research and practice priorities</em> will help the field move forward faster in a deliberate fashion.</p>
+</div>
+<div class="section" id="what-does-this-mean-for-actionable-ai-ethics">
+<h3>What does this mean for <a class="reference external" href="https://atg-abhishek.github.io/actionable-ai-ethics">Actionable AI Ethics</a>?<a class="headerlink" href="#what-does-this-mean-for-actionable-ai-ethics" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Preparing your team and organization to better meet these different needs is something that you can start to do by determining which of the mentioned instruments are more applicable to your case.</p></li>
+<li><p>Working actively with peers in your industry to create and augment best practices will not only help you shine as a practitioner but also push the entire field forward in terms of building more ethical, safe, and inclusive AI systems.</p></li>
+</ul>
+</div>
+<div class="section" id="questions-that-i-am-exploring">
+<h3>Questions that I am exploring<a class="headerlink" href="#questions-that-i-am-exploring" title="Permalink to this headline">¶</a></h3>
+<p><strong>If you have answers to any of these questions, please <a class="reference external" href="https://twitter.com/actionable_ai/status/1325305807605559297?s=20">tweet</a> and let me know!</strong></p>
+<ol class="simple">
+<li><p>Most of the places where these techniques fall flat is a lack of reporting back of the results from the deployment of these techniques. I am wondering what might be the best ways to share results so that they are discoverable.</p></li>
+<li><p>How do we incentivize people and organizations to engage in this work, especially that it seems to place additional burden (at least from their perspective) when it comes to deploying AI systems?</p></li>
+</ol>
+</div>
+<div class="section" id="potential-further-reading">
+<h3>Potential further reading<a class="headerlink" href="#potential-further-reading" title="Permalink to this headline">¶</a></h3>
+<p>A list of papers that I think might be interesting related to this paper.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3063289">Counterfactual Explanations Without Opening the Black Box: Automated Decisions and the GDPR</a></p></li>
+<li><p><a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0004370218305988?via%3Dihub">Explanation in artificial intelligence: Insights from the social sciences</a></p></li>
+</ul>
+<p><em>Please note that this is a wish list of sorts and I haven’t read through the papers listed here unless specified otherwise (if I have read them, there will be a link from the entry to the page for that.)</em></p>
+</div>
+<div class="section" id="twitter-discussion">
+<h3>Twitter discussion<a class="headerlink" href="#twitter-discussion" title="Permalink to this headline">¶</a></h3>
+<p>I’ll write back here with interesting points that surface from the Twitter discussion.</p>
+<p><em>If you have comments and would like to discuss more, please leave a <a class="reference external" href="https://twitter.com/actionable_ai/status/1325305807605559297?s=20">tweet here</a>.</em></p>
+</div>
+<div class="section" id="sign-up-for-the-newsletter">
+<h3>Sign up for the newsletter<a class="headerlink" href="#sign-up-for-the-newsletter" title="Permalink to this headline">¶</a></h3>
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<p>To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the <a class="reference external" href="https://actionableaiethics.substack.com">Actionable AI Ethics newsletter</a></p>
+</div>
+<div class="section" id="support-me-with-a-coffee">
+<h3>Support me with a coffee<a class="headerlink" href="#support-me-with-a-coffee" title="Permalink to this headline">¶</a></h3>
+<p>If you enjoy the content on this page, you can support my work by <a class="reference external" href="https://buymeacoffee.com/abhishekgupta">buying me a coffee</a></p>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="data_statements.html" title="previous page">Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science</a>
+    <a class='right-next' id="next-link" href="american_war_machine.html" title="next page">“Cool Projects” or “Expanding the Efficiency of the Murderous American War Machine?”</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Abhishek Gupta<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>

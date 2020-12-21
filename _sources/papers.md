@@ -27,6 +27,7 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 | October 31 2020 | [Hazard Contribution Modes of Machine Learning Components](./hazard_modes.md) |
 |November 1 2020|[Project Let's Talk Privacy Full Report](./lets_talk_privacy.md)|
 |November 6 2020| [Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science](./data_statements.md) |
+|November 7 2020| [Examining the Black Box: Tools for Assessing Algorithmic Systems](./examining_the_black_box.md)|
 |November 22 2020| [“Cool Projects” or “Expanding the Efficiency of the Murderous American War Machine?”](./american_war_machine.md) |
 |November 23 2020| [AI Safety, Security, and Stability Among Great Powers](./ai_safety_great_powers.md) |
 |November 27 2020| [Disability, Bias, and AI](./disability_bias_ai.md)|
