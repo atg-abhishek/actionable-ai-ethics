@@ -8,6 +8,7 @@
         - file: hazard_modes
         - file: lets_talk_privacy
         - file: data_statements
+        - file: examining_the_black_box
         - file: american_war_machine
         - file: ai_safety_great_powers
         - file: disability_bias_ai
