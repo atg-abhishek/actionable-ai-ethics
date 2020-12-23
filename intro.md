@@ -49,6 +49,8 @@ Learning begins by orienting the reader in the most frequently encountered areas
 
 **To stay up-to-date on the content of the book and learn more about AI Ethics, please sign up here: [Actionable AI Ethics](https://actionableaiethics.substack.com/)**
 
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
 You can also learn more about the AI Ethics domain in general from the other newsletter that is authored by Abhishek Gupta for the Montreal AI Ethics Institute [here](https://aiethics.substack.com).
 
 ***
