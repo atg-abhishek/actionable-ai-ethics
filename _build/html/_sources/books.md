@@ -22,6 +22,8 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 | Date  | Entry | Rating (5 points) | 
 | ------------- | ------------- | ------------- | 
+|December 2020| [Lives of Data: Essays on Computational Cultures from India](https://www.goodreads.com/book/show/56389326-lives-of-data) |3|
+|December 2020|[Design Systems Handbook](https://www.goodreads.com/book/show/36680479-design-systems-handbook)|4|
 |November 2020|[Powered by Design: An Introduction to Problem Solving with Graphic Design](https://www.goodreads.com/book/show/49120113-powered-by-design)|5|
 |November 2020| [Build a Career in Data Science](https://www.manning.com/books/build-a-career-in-data-science) |4|
 |November 2020| [Is this anything?](https://www.goodreads.com/book/show/50722115-is-this-anything) |5|
