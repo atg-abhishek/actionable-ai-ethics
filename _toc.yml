@@ -1,16 +1,35 @@
 - file: intro
-- file: readings
-  sections:
-    - file: papers
-      sections:
-        - file: fairness_definitions_explained
-        - file: automating_informality
-        - file: hazard_modes
-        - file: lets_talk_privacy
-        - file: data_statements
-        - file: examining_the_black_box
-        - file: american_war_machine
-        - file: ai_safety_great_powers
-        - file: disability_bias_ai
-    - file: books
-- file: tools
+# - file: readings
+
+- part: Papers
+  chapters:
+  - file: papers 
+  - file: privacy 
+    sections:
+      - file: lets_talk_privacy
+  - file: bias_and_fairness
+    sections: 
+      - file: fairness_definitions_explained 
+      - file: disability_bias_ai
+  - file: traceability_and_auditability 
+    sections:
+      - file: data_statements
+  - file: interpretability_and_explainability
+    sections:
+      - file: examining_the_black_box
+  - file: machine_learning_security
+    sections:
+      - file: hazard_modes 
+  - file: others
+    sections:
+      - file: american_war_machine
+      - file: automating_informality
+      - file: ai_safety_great_powers
+
+- part: Tools
+  chapters:
+  - file: tools
+
+- part: Books
+  chapters:
+  - file: books

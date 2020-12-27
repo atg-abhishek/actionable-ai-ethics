@@ -20,18 +20,16 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 ## Table of Contents
 
-| Date  | Entry |
-| ------------- | ------------- | 
-|  October 29 2020 | [Fairness Definitions Explained](./fairness_definitions_explained.md)  |
-|  October 30 2020 | [Automating informality: On AI and labour in the global South](./automating_informality.md)       |
-| October 31 2020 | [Hazard Contribution Modes of Machine Learning Components](./hazard_modes.md) |
-|November 1 2020|[Project Let's Talk Privacy Full Report](./lets_talk_privacy.md)|
-|November 6 2020| [Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science](./data_statements.md) |
-|November 7 2020| [Examining the Black Box: Tools for Assessing Algorithmic Systems](./examining_the_black_box.md)|
-|November 22 2020| [“Cool Projects” or “Expanding the Efficiency of the Murderous American War Machine?”](./american_war_machine.md) |
-|November 23 2020| [AI Safety, Security, and Stability Among Great Powers](./ai_safety_great_powers.md) |
-|November 27 2020| [Disability, Bias, and AI](./disability_bias_ai.md)|
+These are the areas that will be covered in the paper analyses:
 
+* [Privacy](privacy.md)
+* [Bias and Fairness](bias_and_fairness.md)
+* [Traceability and Auditability](traceability_and_auditability.md)
+* [Interpretability and Explainability](interpretability_and_explainability.md)
+* [Machine Learning Security](machine_learning_security.md)
+* [Others](others.md)
+
+For papers under each of these areas, please navigate to the respective pages.
 ## Feedback
 
 *As always, if you have any comments, please don't hesitate to reach out to me on [Twitter](https://twitter.com/atg_abhishek) or any of the other ways of reaching me listed [here](https://atg-abhishek.github.io).* 

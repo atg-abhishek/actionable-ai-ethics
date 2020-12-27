@@ -1,6 +1,6 @@
-# Papers
+# Traceability and Auditability
 
-On the following pages, you will find summaries and insights on papers that I am reading. You can refer to the Table of Contents below for more details.
+On the following pages, you will find summaries and insights on papers that I am reading in the area of traceability and auditability. You can refer to the Table of Contents below for more details.
 
 To find out about [books](books.md) (well this will have more than just books in AI ethics!) that I find interesting in the domain of AI ethics, you can visit the respective pages.
 
@@ -20,16 +20,10 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 ## Table of Contents
 
-These are the areas that will be covered in the paper analyses:
+```{tableofcontents}
+```
 
-* [Privacy](privacy.md)
-* [Bias and Fairness](bias_and_fairness.md)
-* [Traceability and Auditability](traceability_and_auditability.md)
-* [Interpretability and Explainability](interpretability_and_explainability.md)
-* [Machine Learning Security](machine_learning_security.md)
-* [Others](others.md)
 
-For papers under each of these areas, please navigate to the respective pages.
 ## Feedback
 
 *As always, if you have any comments, please don't hesitate to reach out to me on [Twitter](https://twitter.com/atg_abhishek) or any of the other ways of reaching me listed [here](https://atg-abhishek.github.io).* 
