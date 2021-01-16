@@ -8,6 +8,7 @@ html:
   favicon: abhishek.png
   extra_navbar: You can support this work by <a href="https://buymeacoffee.com/abhishekgupta">buying me a coffee!</a>
   extra_footer: "Making Responsible AI the Norm rather than the Exception"
+  baseurl: https://atg-abhishek.github.io/actionable-ai-ethics
 
 # Information about where the book exists on the web
 repository:
@@ -20,3 +21,11 @@ launch_buttons:
 latex:
   latex_documents:
     targetname: book.tex
+
+# sphinx:
+#   extra_extensions:
+#   - sphinxext.opengraph
+#   config:
+#     ogp_site_url: "https://atg-abhishek.github.io/actionable-ai-ethics"
+#     ogp_image: "https://atg-abhishek.github.io/actionable-ai-ethics/_static/abhishek.png"
+#     ogp_description_length: 200
