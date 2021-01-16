@@ -22,10 +22,11 @@ latex:
   latex_documents:
     targetname: book.tex
 
-# sphinx:
-#   extra_extensions:
-#   - sphinxext.opengraph
-#   config:
-#     ogp_site_url: "https://atg-abhishek.github.io/actionable-ai-ethics"
-#     ogp_image: "https://atg-abhishek.github.io/actionable-ai-ethics/_static/abhishek.png"
-#     ogp_description_length: 200
+sphinx:
+  extra_extensions:
+  - sphinxext.opengraph
+  config:
+    ogp_site_url: "https://atg-abhishek.github.io/actionable-ai-ethics"
+    ogp_image: "https://atg-abhishek.github.io/actionable-ai-ethics/_static/abhishek.png"
+    ogp_description_length: 200
+    ogp_site_name: "Actionable AI Ethics by Abhishek Gupta"
