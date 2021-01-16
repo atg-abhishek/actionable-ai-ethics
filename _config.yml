@@ -1,7 +1,13 @@
 # Book settings
 title: Actionable AI Ethics
 author: Abhishek Gupta
+copyright: "2021"
 logo: abhishek.png
+
+html:
+  favicon: abhishek.png
+  extra_navbar: You can support this work by <a href="https://buymeacoffee.com/abhishekgupta">buying me a coffee!</a>
+  extra_footer: "Making Responsible AI the Norm rather than the Exception"
 
 # Information about where the book exists on the web
 repository:
