@@ -6,14 +6,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Algorithmic content moderation: Technical and political challenges in the automation of platform governance" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://atg-abhishek.github.io/algorithmic_content_moderation.html" />
-  <meta property="og:site_name" content="Actionable AI Ethics by Abhishek Gupta" />
-  <meta property="og:description" content="Authors: Robert Gorwa, Reuben Binns, and Christian Katzenbach Paper link Summary: One-line summary: If you enjoy the content on this page, you can support my work by buying me a coffee The Global I..." />
-  <meta property="og:image" content="https://atg-abhishek.github.io/actionable-ai-ethics/_static/abhishek.png" />
-  <meta property="og:image:alt" content="Actionable AI Ethics by Abhishek Gupta" />
-  
     <title>Algorithmic content moderation: Technical and political challenges in the automation of platform governance &#8212; Actionable AI Ethics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
@@ -23,9 +15,9 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-dropdown.css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
@@ -269,6 +261,21 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-are-some-of-the-reasons-precipitating-the-need-to-utilize-ai-for-content-moderation">
+     What are some of the reasons precipitating the need to utilize AI for content moderation?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-algorithmic-moderation">
+     What is algorithmic moderation?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#some-basic-terminology">
+     Some basic terminology
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#conclusion">
      Conclusion
     </a>
@@ -360,6 +367,43 @@
 <li><p>what constitutes “valid” content is determined by a homogenous set of people in Silicon Valley that affects people all around the world</p></li>
 <li><p>a potential lack of transparency and accountability, especially when things go wrong.</p></li>
 </ul>
+</div>
+<div class="section" id="what-are-some-of-the-reasons-precipitating-the-need-to-utilize-ai-for-content-moderation">
+<h3>What are some of the reasons precipitating the need to utilize AI for content moderation?<a class="headerlink" href="#what-are-some-of-the-reasons-precipitating-the-need-to-utilize-ai-for-content-moderation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>very large amount of UGC</p></li>
+<li><p>short response times dictated by legislations, for example the NetzDG or the EU Code of Conduct on Hate Speech, that necessitate the use of AI to meet those requirements.</p></li>
+</ul>
+</div>
+<div class="section" id="what-is-algorithmic-moderation">
+<h3>What is algorithmic moderation?<a class="headerlink" href="#what-is-algorithmic-moderation" title="Permalink to this headline">¶</a></h3>
+<p>An important point made in the paper pointing to prior work by Grimmelmann talks about how moderation is not just the act of administrators and others involved in the moderation process to remove content, but it also includes the design decisions that are made for the platform that dictate how users interact with each other.</p>
+<p><em>In this paper when the term algorithmic moderation is used, it refers to algorithmic commercial content moderation.</em></p>
+<p>This refers to the act of either doing <em>prediction</em> or <em>matching</em> that leads to a decision or governance outcomes related to the piece of content and the parties involved. As an example, it could be taking down the content, geoblocking, suspension of accounts, among other actions.</p>
+<p>Again, in this paper, the focus is on <strong>hard moderation</strong> which refers to actions like taking down content and blocking accounts vs. <strong>soft moderation</strong> which refers to design decisions, recommendation algorithms, and other approaches that are used to govern the interactions between content and users on a platform.</p>
+</div>
+<div class="section" id="some-basic-terminology">
+<h3>Some basic terminology<a class="headerlink" href="#some-basic-terminology" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">Relying on the members of the community in a distributed manner to self-moderate the content that is created and distributed on a platform.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Matching</span></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">This involves hiring dedicated staff who are responsible for moderating the content by reviewing those that are either flagged by users or put in their review queue by some other mechanism.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Classification</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="conclusion">
 <h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h3>

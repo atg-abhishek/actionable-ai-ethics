@@ -1,0 +1,537 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding the Capabilities, Limitations, and Societal Impacts of Large Language Models &#8212; Actionable AI Ethics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://atg-abhishek.github.io/actionable-ai-ethics/understanding_cap_limits_societal_implications_large_language_models.html" />
+    <link rel="shortcut icon" href="_static/abhishek.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Traceability and Auditability" href="traceability_and_auditability.html" />
+    <link rel="prev" title="Disability, Bias, and AI" href="disability_bias_ai.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://atg-abhishek.github.io/actionable-ai-ethics/understanding_cap_limits_societal_implications_large_language_models.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Understanding the Capabilities, Limitations, and Societal Impacts of Large Language Models" />
+<meta property="og:description" content="Understanding the Capabilities, Limitations, and Societal Impacts of Large Language Models  Authors: Alex Tamkin, Miles Brundage, Jack Clark, and Deep Ganguli  " />
+<meta property="og:image"       content="https://atg-abhishek.github.io/actionable-ai-ethics/_static/abhishek.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/abhishek.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Actionable AI Ethics</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to Actionable AI Ethics
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Papers
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="papers.html">
+   Papers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="privacy.html">
+   Privacy
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="bias_and_fairness.html">
+   Bias and Fairness
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="fairness_definitions_explained.html">
+     Fairness Definitions Explained
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="disability_bias_ai.html">
+     Disability, Bias, and AI
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Understanding the Capabilities, Limitations, and Societal Impacts of Large Language Models
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="traceability_and_auditability.html">
+   Traceability and Auditability
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="interpretability_and_explainability.html">
+   Interpretability and Explainability
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="machine_learning_security.html">
+   Machine Learning Security
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="others.html">
+   Others
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tools
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tools.html">
+   AI Ethics Tool of the Week
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Books
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="books.html">
+   Books
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  You can support this work by <a href="https://buymeacoffee.com/abhishekgupta">buying me a coffee!</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/understanding_cap_limits_societal_implications_large_language_models.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#one-line-summary">
+     One-line summary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#technical-capabilities-and-limitations">
+     Technical Capabilities and Limitations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#scale-leading-to-interesting-results">
+       Scale leading to interesting results
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-do-we-mean-by-intelligence-and-understanding">
+       What do we mean by intelligence and understanding?
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#alignment-with-human-values">
+       Alignment with human values
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#societal-impacts">
+     Societal impacts
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#controlled-access">
+       Controlled access
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#deploying-such-models">
+       Deploying such models
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#potential-for-accelerating-disinformation">
+       Potential for accelerating disinformation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bias">
+       Bias
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#economic-impacts">
+       Economic impacts
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#future-research-directions">
+     Future Research Directions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusion">
+     Conclusion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-does-this-mean-for-actionable-ai-ethics">
+     What does this mean for Actionable AI Ethics?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#questions-that-i-am-exploring">
+     Questions that I am exploring
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#potential-further-reading">
+     Potential further reading
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#twitter-discussion">
+     Twitter discussion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sign-up-for-the-newsletter">
+     Sign up for the newsletter
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#support-me-with-a-coffee">
+     Support me with a coffee
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="understanding-the-capabilities-limitations-and-societal-impacts-of-large-language-models">
+<h1>Understanding the Capabilities, Limitations, and Societal Impacts of Large Language Models<a class="headerlink" href="#understanding-the-capabilities-limitations-and-societal-impacts-of-large-language-models" title="Permalink to this headline">¶</a></h1>
+<p><strong>Authors</strong>: Alex Tamkin, Miles Brundage, Jack Clark, and Deep Ganguli</p>
+<p><a class="reference external" href="https://arxiv.org/abs/2102.02503">Paper link</a></p>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="one-line-summary">
+<h3>One-line summary<a class="headerlink" href="#one-line-summary" title="Permalink to this headline">¶</a></h3>
+<p>The paper provides insights and different lines of inquiry on the capabilities, limtations and the societal impacts of large-scale language models, specifically in the context of the GPT-3 and other such models that might be released in the coming months and years.
+It also dives into issues of what constitutes intelligence and how such models can be better aligned with human needs and values.
+All of these are based on a workshop that was convened by the authors inviting participation from a wide variety of backgrounds.</p>
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<p>If you enjoy the content on this page, you can support my work by <a class="reference external" href="https://buymeacoffee.com/abhishekgupta">buying me a coffee</a></p>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+</div>
+<div class="section" id="technical-capabilities-and-limitations">
+<h3>Technical Capabilities and Limitations<a class="headerlink" href="#technical-capabilities-and-limitations" title="Permalink to this headline">¶</a></h3>
+<p>One of the points that immediately caught my eye when reading this paper which often goes unsaid in many conversations is the lack of transparency around how many other such large-scale models (like the GPT-3) are being used by corporations that haven’t been disclosed.
+In particular, based on the challenges that have been encountered in terms of biases in the GPT-3 model, because of the corpora of data that it is trained on, what might be the datasets that such undisclosed models are trained on and what are some of the protective measures that are adopted by them.</p>
+<div class="section" id="scale-leading-to-interesting-results">
+<h4>Scale leading to interesting results<a class="headerlink" href="#scale-leading-to-interesting-results" title="Permalink to this headline">¶</a></h4>
+<p>The paper points to how the simple idea of scaling the number of parameters and the amount of data ingested by the system led to a lot of interesting properties in the system which is functionally similar to the smaller GPT-2 model.
+The participants in the workshop pointed to similarities with the laws in physics and thermodynamics.</p>
+<blockquote>
+<div><p>We talk a lot about interdisciplinarity between domains if we’re to build responsible AI systems, but something that jumped from the discussion as presented in the paper was the requirement to have many different technical subdomains also working together so that the system can be fielded responsibly including those who manage the infrastructure that helps to run such large-scale models in the first place.</p>
+</div></blockquote>
+</div>
+<div class="section" id="what-do-we-mean-by-intelligence-and-understanding">
+<h4>What do we mean by intelligence and understanding?<a class="headerlink" href="#what-do-we-mean-by-intelligence-and-understanding" title="Permalink to this headline">¶</a></h4>
+<p>The current methodology for judging the performance of a system stems from various accuracy and performance metrics that seek to allocate a score based on how frequently the system is right.
+An important distinction that participants pointed out was when you have systems that are going to be used in important domains like healthcare, etc. we might need to reconsider if being “mostly right” is going to be adequate.
+Specifically, we would need to consider if there are important examples that the system is getting wrong and have higher penalties in those situations to align the system more with what matters to humans.</p>
+<p>Another interesting point of discussion was whether this obsession with understanding is even important for exhibiting intelligence as they pointed to how a recent Scrabble champion in French knew very little French in the first place as trained himself solely for the competition.</p>
+<blockquote>
+<div><p>Acquiring more from less data might require multimodal training datasets that could accelerate the learning acquired by the system, something that a lot of researchers are working on.</p>
+</div></blockquote>
+</div>
+<div class="section" id="alignment-with-human-values">
+<h4>Alignment with human values<a class="headerlink" href="#alignment-with-human-values" title="Permalink to this headline">¶</a></h4>
+<p>While what constitute human values itself has a lot of variance across different cultures and regions, there was a strong emphasis on at least involving people from many different domains to gain a more holistic sense for this.
+In addition, working towards techniques that are explicitly tasked with ensuring the alignment in the first place was another requirement that participants emphasized as we venture into ever-larger models that have the potential to start exhibiting what some might call general intelligence.</p>
+</div>
+</div>
+<div class="section" id="societal-impacts">
+<h3>Societal impacts<a class="headerlink" href="#societal-impacts" title="Permalink to this headline">¶</a></h3>
+<p>As GPT-3 has exhibited many different capabilities, taking basic task descriptions like the natural language description of a website and then generating the boilerplate code for that or in parsing legal documents and sharing summaries of them, the questions about the societal impacts of such models loom large.</p>
+<div class="section" id="controlled-access">
+<h4>Controlled access<a class="headerlink" href="#controlled-access" title="Permalink to this headline">¶</a></h4>
+<p>A point made by the participants was that given that OpenAI has constrained access to the model behind an API, there is a higher degree of control in preventing misuses of the model.
+But, a related concern is that there is a lack of transparency when it comes to how such requests for access are processed in the first place and who is and who isn’t denied access in the first place.</p>
+</div>
+<div class="section" id="deploying-such-models">
+<h4>Deploying such models<a class="headerlink" href="#deploying-such-models" title="Permalink to this headline">¶</a></h4>
+<p>Arguments for th societal benefits and harms can be made in many different fora, but if we are to adopt a more scientifically rigorous approach, we need to come up with more defined metrics against which we can benchmark such systems.
+While no organization can maintain a lasting advantage when it comes to such models, there is also a responsibility that such organizations should undertake in setting responsible norms that others can follow, especially when they are large organizations and they can dedicate efforts towards doing so.</p>
+</div>
+<div class="section" id="potential-for-accelerating-disinformation">
+<h4>Potential for accelerating disinformation<a class="headerlink" href="#potential-for-accelerating-disinformation" title="Permalink to this headline">¶</a></h4>
+<p>This has been one of the most cited harms when it comes to large language models that can produce coherent and persuasive text.
+To that end, investments in being able to discern between the two and helping people recognize them in the wild is also going to be an important skill that needs to be built up over time.
+Cryptographic methods that can ascertain the authenticity of content and verify its provenance might prove to be effective ways to ensure a healthy information ecosystem.</p>
+</div>
+<div class="section" id="bias">
+<h4>Bias<a class="headerlink" href="#bias" title="Permalink to this headline">¶</a></h4>
+<p>This has been demonstrated through many ad-hoc and rigorous studies that GPT-3 exhibits bias, some of which is a function of the text corpora that it is trained on.</p>
+<blockquote>
+<div><p>A very important distinction that was made by the participants here was the emphasis that we must place in carefully defining what is biased and what isn’t for large language models such as GPT-3 that might be used in wildly differing contexts and being inherently multi-use.</p>
+</div></blockquote>
+<p>Red-teaming and combatting bias through the use of expansive and publicly shared bias test suites were the two measures that caught my eye in the paper in addition to some of the other well-known approaches to detecting and mitigating biases.</p>
+</div>
+<div class="section" id="economic-impacts">
+<h4>Economic impacts<a class="headerlink" href="#economic-impacts" title="Permalink to this headline">¶</a></h4>
+<p>Expanding the access to the model through the API can become a way to gather signals in terms of how the use of the model is impacting people from an economic standpoint as it would help to surface new ways that people employ the model for automation.</p>
+</div>
+</div>
+<div class="section" id="future-research-directions">
+<h3>Future Research Directions<a class="headerlink" href="#future-research-directions" title="Permalink to this headline">¶</a></h3>
+<p>For anyone that wants to keep an eye out for where the field might be headed, the research directions section of the paper provides some good jumping off points.
+The one that caught my eye here was creating a more thorough understanding of the threat landscape in a way that emphasizes more rigorous research in making these models more robust.</p>
+</div>
+<div class="section" id="conclusion">
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h3>
+<p>The paper provides a comprehensive but abbreviated overview of the current capabilities and limitations of large language models. More importantly, it provides potential areas of investigation to improve the stature of how we conduct research into the societal impacts of these models and how we might do better.</p>
+</div>
+<div class="section" id="what-does-this-mean-for-actionable-ai-ethics">
+<h3>What does this mean for <a class="reference external" href="https://atg-abhishek.github.io/actionable-ai-ethics">Actionable AI Ethics</a>?<a class="headerlink" href="#what-does-this-mean-for-actionable-ai-ethics" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Staying abreast of how large-scale models are built, the challenges they face, and what we can do to perform better on that front is going to be an important consideration when thinking about which ethical measures to put in place.</p></li>
+<li><p>In particular, being cognizant of the areas where such systems can fail will also be essential if you’re to build more robust systems.</p></li>
+</ul>
+</div>
+<div class="section" id="questions-that-i-am-exploring">
+<h3>Questions that I am exploring<a class="headerlink" href="#questions-that-i-am-exploring" title="Permalink to this headline">¶</a></h3>
+<p><strong>If you have answers to any of these questions, please <a class="reference external" href="https://twitter.com/actionable_ai">tweet</a> and let me know!</strong></p>
+<ol class="simple">
+<li><p>How do we gain better insights into the potential development and fielding of large-scale models like GPT-3 that are undisclosed to the public?</p></li>
+<li><p>How do we move towards an ecosystem that democratizes the access to such models without requiring access to large-scale compute and data infrastructure?</p></li>
+</ol>
+</div>
+<div class="section" id="potential-further-reading">
+<h3>Potential further reading<a class="headerlink" href="#potential-further-reading" title="Permalink to this headline">¶</a></h3>
+<p>A list of papers that I think might be interesting related to this paper.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://faculty.washington.edu/ebender/papers/Stochastic_Parrots.pdf">On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?</a></p></li>
+</ul>
+<p><em>Please note that this is a wish list of sorts and I haven’t read through the papers listed here unless specified otherwise (if I have read them, there will be a link from the entry to the page for that.)</em></p>
+</div>
+<div class="section" id="twitter-discussion">
+<h3>Twitter discussion<a class="headerlink" href="#twitter-discussion" title="Permalink to this headline">¶</a></h3>
+<p>I’ll write back here with interesting points that surface from the Twitter discussion.</p>
+<p><em>If you have comments and would like to discuss more, please leave a <a class="reference external" href="https://twitter.com/actionable_ai">tweet here</a>.</em></p>
+</div>
+<div class="section" id="sign-up-for-the-newsletter">
+<h3>Sign up for the newsletter<a class="headerlink" href="#sign-up-for-the-newsletter" title="Permalink to this headline">¶</a></h3>
+<iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<p>To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the <a class="reference external" href="https://actionableaiethics.substack.com">Actionable AI Ethics newsletter</a></p>
+</div>
+<div class="section" id="support-me-with-a-coffee">
+<h3>Support me with a coffee<a class="headerlink" href="#support-me-with-a-coffee" title="Permalink to this headline">¶</a></h3>
+<p>If you enjoy the content on this page, you can support my work by <a class="reference external" href="https://buymeacoffee.com/abhishekgupta">buying me a coffee</a></p>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="disability_bias_ai.html" title="previous page">Disability, Bias, and AI</a>
+    <a class='right-next' id="next-link" href="traceability_and_auditability.html" title="next page">Traceability and Auditability</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Abhishek Gupta<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            Making Responsible AI the Norm rather than the Exception
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>

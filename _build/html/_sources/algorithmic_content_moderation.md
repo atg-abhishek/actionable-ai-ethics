@@ -46,7 +46,39 @@ This involves hiring dedicated staff who are responsible for moderating the cont
 * what constitutes "valid" content is determined by a homogenous set of people in Silicon Valley that affects people all around the world 
 * a potential lack of transparency and accountability, especially when things go wrong. 
 
+### What are some of the reasons precipitating the need to utilize AI for content moderation? 
 
+* very large amount of UGC 
+* short response times dictated by legislations, for example the NetzDG or the EU Code of Conduct on Hate Speech, that necessitate the use of AI to meet those requirements. 
+
+### What is algorithmic moderation? 
+
+An important point made in the paper pointing to prior work by Grimmelmann talks about how moderation is not just the act of administrators and others involved in the moderation process to remove content, but it also includes the design decisions that are made for the platform that dictate how users interact with each other. 
+
+_In this paper when the term algorithmic moderation is used, it refers to algorithmic commercial content moderation._
+
+This refers to the act of either doing _prediction_ or _matching_ that leads to a decision or governance outcomes related to the piece of content and the parties involved. As an example, it could be taking down the content, geoblocking, suspension of accounts, among other actions. 
+
+Again, in this paper, the focus is on **hard moderation** which refers to actions like taking down content and blocking accounts vs. **soft moderation** which refers to design decisions, recommendation algorithms, and other approaches that are used to govern the interactions between content and users on a platform. 
+
+### Some basic terminology 
+
+````{panels}
+
+Relying on the members of the community in a distributed manner to self-moderate the content that is created and distributed on a platform.
+
+{badge}`Matching,badge-primary`
+
+
+----
+
+This involves hiring dedicated staff who are responsible for moderating the content by reviewing those that are either flagged by users or put in their review queue by some other mechanism.
+
+{badge}`Classification,badge-primary`
+
+
+
+````
 
 
 ### Conclusion 
