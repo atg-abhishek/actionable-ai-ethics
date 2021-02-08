@@ -118,6 +118,11 @@ I'll write back here with interesting points that surface from the Twitter discu
 
 To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the [Actionable AI Ethics newsletter](https://actionableaiethics.substack.com)
 
+
+### Sign up for the AI Ethics Brief by the [Montreal AI Ethics Institute](https://montrealethics.ai)
+
+<iframe src="https://brief.montrealethics.ai/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
 ### Support me with a coffee
 
 If you enjoy the content on this page, you can support my work by [buying me a coffee](https://buymeacoffee.com/abhishekgupta)
