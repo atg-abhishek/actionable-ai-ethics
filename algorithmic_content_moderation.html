@@ -276,6 +276,33 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#so-what-are-some-of-the-problems">
+     So, what are some of the problems?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-is-the-problem-with-matching">
+       What is the problem with matching?
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-is-the-problem-with-classification">
+       What is the problem with classification?
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-happens-when-content-is-matched-or-classified">
+     What happens when content is matched or classified?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-does-the-future-hold">
+     What does the future hold?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#conclusion">
      Conclusion
     </a>
@@ -306,8 +333,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#support-me-with-a-coffee">
-     Support me with a coffee
+    <a class="reference internal nav-link" href="#sign-up-for-the-ai-ethics-brief-by-the-montreal-ai-ethics-institute">
+     Sign up for the AI Ethics Brief by the Montreal AI Ethics Institute
     </a>
    </li>
   </ul>
@@ -330,14 +357,16 @@
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="one-line-summary">
 <h3>One-line summary<a class="headerlink" href="#one-line-summary" title="Permalink to this headline">¶</a></h3>
-<!-- TODO -->
+<p>The paper provides a comprehensive overview of the existing content moderation practices and some of the basic terminology associated with this domain.
+It also goes into detail on the pros and cons of different approaches and the difficulties that continue to be present in the field despite the introduction of automated content moderation.
+Finally, it shares some of the future directions that are worthy of our attention to come up with even more effective content moderation approaches.</p>
 <iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 <p>If you enjoy the content on this page, you can support my work by <a class="reference external" href="https://buymeacoffee.com/abhishekgupta">buying me a coffee</a></p>
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
 <br>
 <p>The Global Internet Forum for Counter-Terrorism is a cross-company group that helps to share information across some of the major tech providers to combat illegal online hate speech. They regularly share information with each other to help increase the efficacy of their content moderation efforts.</p>
 <blockquote>
-<div><p>As the amount of user-generated content (UGC) goes up in volume, the ability to effectively utilize community and human moderation is diminished and we have to rely on automated content moderation.</p>
+<div><p>As the amount of user-generated content (UGC) goes up in volume, the ability to effectively utilize community and human moderation is diminished and we have to rely on automated and commercial content moderation.</p>
 </div></blockquote>
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
@@ -379,7 +408,8 @@
 <h3>What is algorithmic moderation?<a class="headerlink" href="#what-is-algorithmic-moderation" title="Permalink to this headline">¶</a></h3>
 <p>An important point made in the paper pointing to prior work by Grimmelmann talks about how moderation is not just the act of administrators and others involved in the moderation process to remove content, but it also includes the design decisions that are made for the platform that dictate how users interact with each other.</p>
 <p><em>In this paper when the term algorithmic moderation is used, it refers to algorithmic commercial content moderation.</em></p>
-<p>This refers to the act of either doing <em>prediction</em> or <em>matching</em> that leads to a decision or governance outcomes related to the piece of content and the parties involved. As an example, it could be taking down the content, geoblocking, suspension of accounts, among other actions.</p>
+<p>This refers to the act of either doing <em>prediction</em> or <em>matching</em> that leads to a decision or governance outcomes related to the piece of content and the parties involved.
+As an example, it could be taking down the content, geoblocking, suspension of accounts, among other actions.</p>
 <p>Again, in this paper, the focus is on <strong>hard moderation</strong> which refers to actions like taking down content and blocking accounts vs. <strong>soft moderation</strong> which refers to design decisions, recommendation algorithms, and other approaches that are used to govern the interactions between content and users on a platform.</p>
 </div>
 <div class="section" id="some-basic-terminology">
@@ -389,7 +419,34 @@
 <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
 <div class="card w-100 shadow docutils">
 <div class="card-body docutils">
-<p class="card-text">Relying on the members of the community in a distributed manner to self-moderate the content that is created and distributed on a platform.</p>
+<p class="card-text">A technique that transforms a large piece of data into a smaller piece of data, trying to uniquely identify it despite the change. They are frequently used in cryptography to check the integrity of content.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Hashing</span></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">Since hashes are supposed to be unique and two dissimilar pieces of content should give different hashes, if content is altered for example through rotation or watermarking, we might miss previously flagged content in this modified form.
+Homologies are a way to counter that problem through hashing techniques that are insensitive to those changes allowing for matching of “similar” content.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Homology</span></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">Since the cryptographic definition of hashing requires exact matching which is orthogonal to what we want to achieve with hashing in content moderation, there are non-cryptographic approaches to hashing like perceptual hashing which focus only on the perceptually relevant features in a piece of content.
+This means that it doesn’t change if minor features in the content are altered that would still lead them to be perceived the same way by humans.
+This allows us to match similar content and leverage previously flagged content to prevent it from spreading again.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Perceptual Hashing</span></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">Matching refers to the use of any of the hashing techniques to identify whether there exists the same content (modified or otherwise) in the previously flagged content repository so that it can automatically be removed.</p>
 <p class="card-text"><span class="sphinx-bs badge badge-primary">Matching</span></p>
 </div>
 </div>
@@ -397,7 +454,7 @@
 <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
 <div class="card w-100 shadow docutils">
 <div class="card-body docutils">
-<p class="card-text">This involves hiring dedicated staff who are responsible for moderating the content by reviewing those that are either flagged by users or put in their review queue by some other mechanism.</p>
+<p class="card-text">Classification refers to the approach of using the previous bank of flagged content and bucket new incoming content into a category that is most appropriate given the other content in that repository.</p>
 <p class="card-text"><span class="sphinx-bs badge badge-primary">Classification</span></p>
 </div>
 </div>
@@ -405,22 +462,80 @@
 </div>
 </div>
 </div>
+<div class="section" id="so-what-are-some-of-the-problems">
+<h3>So, what are some of the problems?<a class="headerlink" href="#so-what-are-some-of-the-problems" title="Permalink to this headline">¶</a></h3>
+<p>For starters, maintaining a blacklist of this content that is shared and accessible across the major platforms is a very challenging task.
+Content, especially multi-modal content, constantly changes in meaning over time.
+Words take on new meanings based on the societal context in which they are used, and there are also limitations in the kind of examples that are available in the flagged content repository.
+Relying on domain-specific ontologies, for example a list of words that are deemed to be offensive to the LGBTQ communities based on consultations with domain experts is one way to address this challenge but that requires us to be able to go out and do that for a lot of different communities and coordinate that effort across all the platforms that might need to use such an ontology.</p>
+<div class="section" id="what-is-the-problem-with-matching">
+<h4>What is the problem with matching?<a class="headerlink" href="#what-is-the-problem-with-matching" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>It requires a manually curated list of flagged content that needs to constantly be kept up to date.</p></li>
+<li><p>It needs to be robust to variations introduced by malicious actors who are trying to evade moderation efforts.</p></li>
+</ul>
+</div>
+<div class="section" id="what-is-the-problem-with-classification">
+<h4>What is the problem with classification?<a class="headerlink" href="#what-is-the-problem-with-classification" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>It requires inducing generalizations from existing content bases which might not be culturally or contextually relevant beyond the home base of the content that is used to generate these generalizations.</p></li>
+<li><p>New categories may emerge which will again need manual effort before they are effective as a content moderation tool.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="what-happens-when-content-is-matched-or-classified">
+<h3>What happens when content is matched or classified?<a class="headerlink" href="#what-happens-when-content-is-matched-or-classified" title="Permalink to this headline">¶</a></h3>
+<p>The content can either be flagged or deleted.</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">The content is identified for further processing at which point it enters the queue of content to be reviewed by human moderators, or pushed into a high-priority queue to be reviewed faster or by an expert moderator.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Flagging</span></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">The content is deleted without further review.
+This is reserved as an action for more serious violations of the terms and conditions of the platform.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Deletion</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="what-does-the-future-hold">
+<h3>What does the future hold?<a class="headerlink" href="#what-does-the-future-hold" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>When considering text content, given the complexity of language, it is incredibly hard to encode cultural and contextual factors into an automated system, so the presence of human moderators won’t be fully eliminated.</p></li>
+<li><p>Human moderator’s efforts will be augmented through the use of automated content moderation systems.</p></li>
+<li><p>Companies using shared hash databases, and different policies of flagging and deleting need to become more transparent to earn the trust of their community of users.</p></li>
+<li><p>The above point is important because there is an uneven application of community standards and the severity of content moderation based on the commercial motivations of different platforms.</p></li>
+<li><p>Opening up the shared databases and more access to the policies as they are actually applied to content moderation will be helpful to 3rd party auditors and researchers to make the systems more just and help them work in the interest of users rather than <strong>only</strong> serving commercial interests.</p></li>
+</ul>
+</div>
 <div class="section" id="conclusion">
 <h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h3>
+<p>Content moderation is an incredibly complicated field in the application of AI and it more than other endeavors perhaps requires the inclusion of domain experts and communities in the formulation of community standards and moderation approaches.</p>
+<p>Additionally, higher levels of transparency in how the content moderation is applied in practice will also help to elicit higher levels of trust from the user community on the platforms.</p>
 </div>
 <div class="section" id="what-does-this-mean-for-actionable-ai-ethics">
 <h3>What does this mean for <a class="reference external" href="https://atg-abhishek.github.io/actionable-ai-ethics">Actionable AI Ethics</a>?<a class="headerlink" href="#what-does-this-mean-for-actionable-ai-ethics" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li></li>
-<li></li>
+<li><p>The design of content moderation systems should be flexible to include the input of external stakeholders, including domain experts and community members.</p></li>
+<li><p>The flexibility of such systems should also be such that one can easily integrate emerging uses of language and other media, for example memes as a form of multi-modal content diffusion.</p></li>
 </ul>
 </div>
 <div class="section" id="questions-that-i-am-exploring">
 <h3>Questions that I am exploring<a class="headerlink" href="#questions-that-i-am-exploring" title="Permalink to this headline">¶</a></h3>
 <p><strong>If you have answers to any of these questions, please <a class="reference external" href="https://twitter.com/actionable_ai/status/1324943418712334336?s=20">tweet</a> and let me know!</strong></p>
 <ol class="simple">
-<li></li>
-<li></li>
+<li><p>What is an effective way to include emergent language uses into content moderation systems in an unsupervised manner?</p></li>
+<li><p>What is the extent to which external community stakeholders are invited to contribute to the content moderation practices of different platforms today?</p></li>
 </ol>
 </div>
 <div class="section" id="potential-further-reading">
@@ -443,8 +558,10 @@
 <iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 <p>To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the <a class="reference external" href="https://actionableaiethics.substack.com">Actionable AI Ethics newsletter</a></p>
 </div>
-<div class="section" id="support-me-with-a-coffee">
-<h3>Support me with a coffee<a class="headerlink" href="#support-me-with-a-coffee" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="sign-up-for-the-ai-ethics-brief-by-the-montreal-ai-ethics-institute">
+<h3>Sign up for the AI Ethics Brief by the <a class="reference external" href="https://montrealethics.ai">Montreal AI Ethics Institute</a><a class="headerlink" href="#sign-up-for-the-ai-ethics-brief-by-the-montreal-ai-ethics-institute" title="Permalink to this headline">¶</a></h3>
+<iframe src="https://brief.montrealethics.ai/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe
+### Support me with a coffee
 <p>If you enjoy the content on this page, you can support my work by <a class="reference external" href="https://buymeacoffee.com/abhishekgupta">buying me a coffee</a></p>
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script></div>
 </div>
