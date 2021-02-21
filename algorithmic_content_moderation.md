@@ -8,7 +8,9 @@
 
 ### One-line summary
 
-The paper provides a comprehensive overview of the existing content moderation practices
+The paper provides a comprehensive overview of the existing content moderation practices and some of the basic terminology associated with this domain. 
+It also goes into detail on the pros and cons of different approaches and the difficulties that continue to be present in the field despite the introduction of automated content moderation. 
+Finally, it shares some of the future directions that are worthy of our attention to come up with even more effective content moderation approaches. 
 
 <iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
