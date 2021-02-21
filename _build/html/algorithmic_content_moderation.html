@@ -306,8 +306,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#support-me-with-a-coffee">
-     Support me with a coffee
+    <a class="reference internal nav-link" href="#sign-up-for-the-ai-ethics-brief-by-the-montreal-ai-ethics-institute">
+     Sign up for the AI Ethics Brief by the Montreal AI Ethics Institute
     </a>
    </li>
   </ul>
@@ -337,7 +337,7 @@
 <br>
 <p>The Global Internet Forum for Counter-Terrorism is a cross-company group that helps to share information across some of the major tech providers to combat illegal online hate speech. They regularly share information with each other to help increase the efficacy of their content moderation efforts.</p>
 <blockquote>
-<div><p>As the amount of user-generated content (UGC) goes up in volume, the ability to effectively utilize community and human moderation is diminished and we have to rely on automated content moderation.</p>
+<div><p>As the amount of user-generated content (UGC) goes up in volume, the ability to effectively utilize community and human moderation is diminished and we have to rely on automated and commercial content moderation.</p>
 </div></blockquote>
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
@@ -379,7 +379,8 @@
 <h3>What is algorithmic moderation?<a class="headerlink" href="#what-is-algorithmic-moderation" title="Permalink to this headline">¶</a></h3>
 <p>An important point made in the paper pointing to prior work by Grimmelmann talks about how moderation is not just the act of administrators and others involved in the moderation process to remove content, but it also includes the design decisions that are made for the platform that dictate how users interact with each other.</p>
 <p><em>In this paper when the term algorithmic moderation is used, it refers to algorithmic commercial content moderation.</em></p>
-<p>This refers to the act of either doing <em>prediction</em> or <em>matching</em> that leads to a decision or governance outcomes related to the piece of content and the parties involved. As an example, it could be taking down the content, geoblocking, suspension of accounts, among other actions.</p>
+<p>This refers to the act of either doing <em>prediction</em> or <em>matching</em> that leads to a decision or governance outcomes related to the piece of content and the parties involved.
+As an example, it could be taking down the content, geoblocking, suspension of accounts, among other actions.</p>
 <p>Again, in this paper, the focus is on <strong>hard moderation</strong> which refers to actions like taking down content and blocking accounts vs. <strong>soft moderation</strong> which refers to design decisions, recommendation algorithms, and other approaches that are used to govern the interactions between content and users on a platform.</p>
 </div>
 <div class="section" id="some-basic-terminology">
@@ -389,7 +390,34 @@
 <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
 <div class="card w-100 shadow docutils">
 <div class="card-body docutils">
-<p class="card-text">Relying on the members of the community in a distributed manner to self-moderate the content that is created and distributed on a platform.</p>
+<p class="card-text">A technique that transforms a large piece of data into a smaller piece of data, trying to uniquely identify it despite the change. They are frequently used in cryptography to check the integrity of content.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Hashing</span></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">Since hashes are supposed to be unique and two dissimilar pieces of content should give different hashes, if content is altered for example through rotation or watermarking, we might miss previously flagged content in this modified form.
+Homologies are a way to counter that problem through hashing techniques that are insensitive to those changes allowing for matching of “similar” content.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Homology</span></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">Since the cryptographic definition of hashing requires exact matching which is orthogonal to what we want to achieve with hashing in content moderation, there are non-cryptographic approaches to hashing like perceptual hashing which focus only on the perceptually relevant features in a piece of content.
+This means that it doesn’t change if minor features in the content are altered that would still lead them to be perceived the same way by humans.
+This allows us to match similar content and leverage previously flagged content to prevent it from spreading again.</p>
+<p class="card-text"><span class="sphinx-bs badge badge-primary">Perceptual Hashing</span></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">Matching refers to the use of any of the hashing techniques to identify whether there exists the same content (modified or otherwise) in the previously flagged content repository so that it can automatically be removed.</p>
 <p class="card-text"><span class="sphinx-bs badge badge-primary">Matching</span></p>
 </div>
 </div>
@@ -397,7 +425,7 @@
 <div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
 <div class="card w-100 shadow docutils">
 <div class="card-body docutils">
-<p class="card-text">This involves hiring dedicated staff who are responsible for moderating the content by reviewing those that are either flagged by users or put in their review queue by some other mechanism.</p>
+<p class="card-text">Classification refers to the approach of using the previous bank of flagged content and bucket new incoming content into a category that is most appropriate given the other content in that repository.</p>
 <p class="card-text"><span class="sphinx-bs badge badge-primary">Classification</span></p>
 </div>
 </div>
@@ -443,8 +471,10 @@
 <iframe src="https://actionableaiethics.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 <p>To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the <a class="reference external" href="https://actionableaiethics.substack.com">Actionable AI Ethics newsletter</a></p>
 </div>
-<div class="section" id="support-me-with-a-coffee">
-<h3>Support me with a coffee<a class="headerlink" href="#support-me-with-a-coffee" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="sign-up-for-the-ai-ethics-brief-by-the-montreal-ai-ethics-institute">
+<h3>Sign up for the AI Ethics Brief by the <a class="reference external" href="https://montrealethics.ai">Montreal AI Ethics Institute</a><a class="headerlink" href="#sign-up-for-the-ai-ethics-brief-by-the-montreal-ai-ethics-institute" title="Permalink to this headline">¶</a></h3>
+<iframe src="https://brief.montrealethics.ai/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe
+### Support me with a coffee
 <p>If you enjoy the content on this page, you can support my work by <a class="reference external" href="https://buymeacoffee.com/abhishekgupta">buying me a coffee</a></p>
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abhishekgupta" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script></div>
 </div>

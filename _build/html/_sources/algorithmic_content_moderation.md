@@ -20,7 +20,7 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 The Global Internet Forum for Counter-Terrorism is a cross-company group that helps to share information across some of the major tech providers to combat illegal online hate speech. They regularly share information with each other to help increase the efficacy of their content moderation efforts. 
 
-> As the amount of user-generated content (UGC) goes up in volume, the ability to effectively utilize community and human moderation is diminished and we have to rely on automated content moderation. 
+> As the amount of user-generated content (UGC) goes up in volume, the ability to effectively utilize community and human moderation is diminished and we have to rely on automated and commercial content moderation. 
 
 
 ````{panels}
@@ -57,7 +57,8 @@ An important point made in the paper pointing to prior work by Grimmelmann talks
 
 _In this paper when the term algorithmic moderation is used, it refers to algorithmic commercial content moderation._
 
-This refers to the act of either doing _prediction_ or _matching_ that leads to a decision or governance outcomes related to the piece of content and the parties involved. As an example, it could be taking down the content, geoblocking, suspension of accounts, among other actions. 
+This refers to the act of either doing _prediction_ or _matching_ that leads to a decision or governance outcomes related to the piece of content and the parties involved. 
+As an example, it could be taking down the content, geoblocking, suspension of accounts, among other actions. 
 
 Again, in this paper, the focus is on **hard moderation** which refers to actions like taking down content and blocking accounts vs. **soft moderation** which refers to design decisions, recommendation algorithms, and other approaches that are used to govern the interactions between content and users on a platform. 
 
@@ -65,17 +66,40 @@ Again, in this paper, the focus is on **hard moderation** which refers to action
 
 ````{panels}
 
-Relying on the members of the community in a distributed manner to self-moderate the content that is created and distributed on a platform.
+A technique that transforms a large piece of data into a smaller piece of data, trying to uniquely identify it despite the change. They are frequently used in cryptography to check the integrity of content. 
+
+{badge}`Hashing,badge-primary`
+
+
+----
+
+Since hashes are supposed to be unique and two dissimilar pieces of content should give different hashes, if content is altered for example through rotation or watermarking, we might miss previously flagged content in this modified form.
+Homologies are a way to counter that problem through hashing techniques that are insensitive to those changes allowing for matching of "similar" content.
+
+{badge}`Homology,badge-primary`
+
+
+----
+
+Since the cryptographic definition of hashing requires exact matching which is orthogonal to what we want to achieve with hashing in content moderation, there are non-cryptographic approaches to hashing like perceptual hashing which focus only on the perceptually relevant features in a piece of content. 
+This means that it doesn't change if minor features in the content are altered that would still lead them to be perceived the same way by humans. 
+This allows us to match similar content and leverage previously flagged content to prevent it from spreading again.
+
+{badge}`Perceptual Hashing,badge-primary`
+
+
+----
+
+Matching refers to the use of any of the hashing techniques to identify whether there exists the same content (modified or otherwise) in the previously flagged content repository so that it can automatically be removed.
 
 {badge}`Matching,badge-primary`
 
 
 ----
 
-This involves hiring dedicated staff who are responsible for moderating the content by reviewing those that are either flagged by users or put in their review queue by some other mechanism.
+Classification refers to the approach of using the previous bank of flagged content and bucket new incoming content into a category that is most appropriate given the other content in that repository. 
 
 {badge}`Classification,badge-primary`
-
 
 
 ````
@@ -117,6 +141,9 @@ I'll write back here with interesting points that surface from the Twitter discu
 
 To stay up-to-date with the latest content in terms of what I am reading and thinking about, please subscribe to the [Actionable AI Ethics newsletter](https://actionableaiethics.substack.com)
 
+### Sign up for the AI Ethics Brief by the [Montreal AI Ethics Institute](https://montrealethics.ai)
+
+<iframe src="https://brief.montrealethics.ai/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe
 ### Support me with a coffee
 
 If you enjoy the content on this page, you can support my work by [buying me a coffee](https://buymeacoffee.com/abhishekgupta)
