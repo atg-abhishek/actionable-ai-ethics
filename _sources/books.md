@@ -22,9 +22,10 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 | Date  | Entry | Rating (5 points) | 
 | ------------- | ------------- | ------------- | 
+|February 2021|[Introducing Mlops: How to Scale Machine Learning in the Enterprise](https://www.goodreads.com/book/show/55182023-introducing-mlops) |4|
 |February 2021| [Facts and Fallacies of Software Engineering](https://www.goodreads.com/book/show/83792.Facts_and_Fallacies_of_Software_Engineering?ac=1&from_search=true&qid=HQYKJoTKnO&rank=2) |5|
 |February 2021| [The Biggest Bluff: How I Learned to Pay Attention, Master Myself, and Win](https://www.goodreads.com/book/show/49814228-the-biggest-bluff) |5|
-|December 2020| [Lives of Data: Essays on Computational Cultures from India](https://www.goodreads.com/book/show/56389326-lives-of-data) |3|
+|January 2021| [Lives of Data: Essays on Computational Cultures from India](https://www.goodreads.com/book/show/56389326-lives-of-data) |3|
 |December 2020|[Design Systems Handbook](https://www.goodreads.com/book/show/36680479-design-systems-handbook)|4|
 |November 2020|[Powered by Design: An Introduction to Problem Solving with Graphic Design](https://www.goodreads.com/book/show/49120113-powered-by-design)|5|
 |November 2020| [Build a Career in Data Science](https://www.manning.com/books/build-a-career-in-data-science) |4|
