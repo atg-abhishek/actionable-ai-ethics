@@ -27,6 +27,7 @@
       - file: automating_informality
       - file: ai_safety_great_powers
       - file: algorithmic_content_moderation
+      - file: responsible_ai_india
 
 - part: Tools
   chapters:
