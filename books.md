@@ -22,6 +22,8 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 | Date  | Entry | Rating (5 points) | 
 | ------------- | ------------- | ------------- | 
+|March 2021| [Data Jujitsu: The Art of Turning Data into Product](https://www.goodreads.com/book/show/20196158-data-jujitsu) |5|
+|March 2021| [97 Things Every Engineering Manager Should Know: Collective Wisdom from the Experts](https://www.goodreads.com/book/show/45007872-97-things-every-engineering-manager-should-know) |4|
 |March 2021|[Klara and the Sun](https://www.goodreads.com/book/show/54120408-klara-and-the-sun)|5|
 |March 2021| [Thinking with Data](https://www.goodreads.com/book/show/20344187-thinking-with-data) |5|
 |February 2021| [Building Intelligent Systems: A Guide to Machine Learning Engineering](https://www.goodreads.com/book/show/37490386-building-intelligent-systems) |5|
