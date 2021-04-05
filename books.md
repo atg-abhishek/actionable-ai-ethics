@@ -22,6 +22,7 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 | Date  | Entry | Rating (5 points) | 
 | ------------- | ------------- | ------------- | 
+|April 2021| [Binti](https://www.goodreads.com/book/show/25667918-binti) |4|
 |March 2021| [Rest: Why you get more done when you work less](https://www.goodreads.com/book/show/29502354-rest) |5|
 |March 2021| [Data Jujitsu: The Art of Turning Data into Product](https://www.goodreads.com/book/show/20196158-data-jujitsu) |5|
 |March 2021| [97 Things Every Engineering Manager Should Know: Collective Wisdom from the Experts](https://www.goodreads.com/book/show/45007872-97-things-every-engineering-manager-should-know) |4|
