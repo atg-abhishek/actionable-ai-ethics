@@ -1,10 +1,6 @@
 Welcome to Actionable AI Ethics
 ===============================
 
-![Cover image](cover.png)
-
-*The book is forthcoming in 2021 to be published by Manning Publications*
-
 ***
 
 **To stay up-to-date on the content of the book and learn more about AI Ethics, please sign up here: [Actionable AI Ethics](https://actionableaiethics.substack.com/)**
