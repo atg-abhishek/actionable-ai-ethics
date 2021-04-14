@@ -28,6 +28,7 @@
       - file: ai_safety_great_powers
       - file: algorithmic_content_moderation
       - file: responsible_ai_india
+      - file: creativity_era_ai
 
 - part: Tools
   chapters:
