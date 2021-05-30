@@ -22,6 +22,12 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 | Date  | Entry | Rating (5 points) | 
 | ------------- | ------------- | ------------- | 
+|May 2021| [Never Split the Difference](https://www.goodreads.com/book/show/38622947-never-split-the-difference) |5|
+|May 2021| [The 4-Hour Work Week](https://www.goodreads.com/book/show/2608195-the-4-hour-work-week) |4|
+|May 2021 | [The Lean Product Playbook](https://www.goodreads.com/book/show/25374501-the-lean-product-playbook) |4|
+|May 2021| [Python One-Liners](https://www.goodreads.com/book/show/48771774-python-one-liners) |4|
+|May 2021| [Practices of the Python Pro](https://www.goodreads.com/book/show/45361469-practices-of-the-python-pro) |5|
+|May 2021| [Start with Why](https://www.goodreads.com/book/show/13490701-start-with-why) |4|
 |April 2021| [Tribe of Mentors](https://www.goodreads.com/book/show/35443314-tribe-of-mentors) |5|
 |April 2021| [Extreme Ownership: How U.S. Navy Seals Lead and Win](https://www.goodreads.com/book/show/35749978-extreme-ownership) |5|
 |April 2021| [Tools of Titans: The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers](https://www.goodreads.com/book/show/31823677-tools-of-titans) |5|
