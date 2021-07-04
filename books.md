@@ -22,6 +22,11 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 | Date  | Entry | Rating (5 points) | 
 | ------------- | ------------- | ------------- | 
+|June 2021 | [Rendezvous with Rama](https://www.goodreads.com/book/show/112537.Rendezvous_with_Rama) |5|
+|June 2021 | [Product Management Essentials: Tools and Techniques for Becoming an Effective Technical Product Manager](https://www.goodreads.com/book/show/36748189-product-management-essentials) |4|
+|June 2021| [Product Management in Practice: A Real-World Guide to the Key Connective Role of the 21st Century](https://www.goodreads.com/book/show/34691715-product-management-in-practice) |5|
+| June 2021 | [2001: A Space Odyssey](https://www.goodreads.com/book/show/70535.2001) |4|
+|June 2021| [The Emperor of All Maladies: A Biography of Cancer](https://www.goodreads.com/book/show/7170627-the-emperor-of-all-maladies) |5|
 |May 2021| [Never Split the Difference](https://www.goodreads.com/book/show/38622947-never-split-the-difference) |5|
 |May 2021| [The 4-Hour Work Week](https://www.goodreads.com/book/show/2608195-the-4-hour-work-week) |4|
 |May 2021 | [The Lean Product Playbook](https://www.goodreads.com/book/show/25374501-the-lean-product-playbook) |4|
