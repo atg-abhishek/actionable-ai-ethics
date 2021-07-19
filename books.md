@@ -22,6 +22,7 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 | Date  | Entry | Rating (5 points) | 
 | ------------- | ------------- | ------------- | 
+|July 2021| [Python Testing with Pytest: Simple, Rapid, Effective, and Scalable](https://www.goodreads.com/book/show/34695799-python-testing-with-pytest) |5|
 |June 2021 | [Rendezvous with Rama](https://www.goodreads.com/book/show/112537.Rendezvous_with_Rama) |5|
 |June 2021 | [Product Management Essentials: Tools and Techniques for Becoming an Effective Technical Product Manager](https://www.goodreads.com/book/show/36748189-product-management-essentials) |4|
 |June 2021| [Product Management in Practice: A Real-World Guide to the Key Connective Role of the 21st Century](https://www.goodreads.com/book/show/34691715-product-management-in-practice) |5|
