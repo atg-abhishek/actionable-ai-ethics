@@ -22,6 +22,9 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 | Date  | Entry | Rating (5 points) | 
 | ------------- | ------------- | ------------- | 
+|August 2021| [Home(Binti #2)](https://www.goodreads.com/book/show/30038654-home) |4|
+|August 2021| [Getting to Yes: Negotiating Agreement Without Giving In](https://www.goodreads.com/book/show/15774220-getting-to-yes) |5|
+|August 2021| [The Rules of Contagion: Why Things Spread - and Why They Stop](https://www.goodreads.com/book/show/52949562-the-rules-of-contagion) |5|
 |July 2021| [Moonwalking with Einstein: The Art and Science of Remembering Everything](https://www.goodreads.com/book/show/12969063-moonwalking-with-einstein) |5|
 |July 2021| [The Billionaire Raj: A Journey Through India's New Gilded Age](https://www.goodreads.com/book/show/37007780-the-billionaire-raj) |4|
 |July 2021| [Smart and Gets Things Done: Joel Spolsky's Concise Guide to Finding the Best Technical Talent](https://www.goodreads.com/book/show/1400993.Smart_and_Gets_Things_Done) |4|
