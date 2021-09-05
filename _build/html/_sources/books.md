@@ -22,6 +22,8 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 | Date  | Entry | Rating (5 points) | 
 | ------------- | ------------- | ------------- | 
+|September 2021| [Liminal](https://www.goodreads.com/book/show/36117280-liminal) |5|
+|August 2021| [The Art of Agile Product Ownership: A Guide for Product Managers, Business Analysts, and Entrepreneurs](https://www.goodreads.com/book/show/51787205-the-art-of-agile-product-ownership)  |3|
 |August 2021| [Home(Binti #2)](https://www.goodreads.com/book/show/30038654-home) |4|
 |August 2021| [Getting to Yes: Negotiating Agreement Without Giving In](https://www.goodreads.com/book/show/15774220-getting-to-yes) |5|
 |August 2021| [The Rules of Contagion: Why Things Spread - and Why They Stop](https://www.goodreads.com/book/show/52949562-the-rules-of-contagion) |5|
