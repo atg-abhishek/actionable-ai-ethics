@@ -22,6 +22,7 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 
 | Date  | Entry | Rating (5 points) | 
 | ------------- | ------------- | ------------- | 
+|September 2021| [Spaceman: An Astronaut's Unlikely Journey to Unlock the Secrets of the Universe](https://www.goodreads.com/book/show/28439264-spaceman) |5|
 |September 2021| [Liminal](https://www.goodreads.com/book/show/36117280-liminal) |5|
 |August 2021| [The Art of Agile Product Ownership: A Guide for Product Managers, Business Analysts, and Entrepreneurs](https://www.goodreads.com/book/show/51787205-the-art-of-agile-product-ownership)  |3|
 |August 2021| [Home(Binti #2)](https://www.goodreads.com/book/show/30038654-home) |4|
