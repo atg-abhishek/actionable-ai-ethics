@@ -21,7 +21,11 @@ If you enjoy the content on this page, you can support my work by [buying me a c
 ## Table of Contents
 
 | Date  | Entry | Rating (5 points) | 
-| ------------- | ------------- | ------------- | 
+| ------------- | ------------- | ------------- |
+|October 2021| [Gunslinger (The Dark Tower #1)](https://www.goodreads.com/book/show/30534943-gunslinger) |5|
+|October 2021| [Negotiation Genius: How to Overcome Obstacles and Achieve Brilliant Results at the Bargaining Table and Beyond](https://www.goodreads.com/book/show/1909043.Negotiation_Genius) |5|
+|October 2021| [Kleptopia: How Dirty Money is Conquering the World](https://www.goodreads.com/book/show/55387439-kleptopia) |5|
+|September 2021| [No Rules Rules: Netflix and the Culture of Reinvention](https://www.goodreads.com/book/show/49099937-no-rules-rules) |5|  
 |September 2021| [Spaceman: An Astronaut's Unlikely Journey to Unlock the Secrets of the Universe](https://www.goodreads.com/book/show/28439264-spaceman) |5|
 |September 2021| [Liminal](https://www.goodreads.com/book/show/36117280-liminal) |5|
 |August 2021| [The Art of Agile Product Ownership: A Guide for Product Managers, Business Analysts, and Entrepreneurs](https://www.goodreads.com/book/show/51787205-the-art-of-agile-product-ownership)  |3|
